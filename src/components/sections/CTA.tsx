@@ -21,29 +21,33 @@ export default function CTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Ready to transform your business?
+          Ready to transform humanitarian response?
           </h2>
           <p className="mt-4 text-xl text-green-100 max-w-2xl mx-auto">
-            Experience the power of GANNET technology. Start your free trial today or schedule a personalized demo.
+          Experience the power of GANNET technology. Request a demo today or learn more about our sponsorship options.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href="/try-now"
+              href="https://app.gannet.ai/sign-in"
               className="rounded-lg bg-white px-8 py-4 text-center text-base font-medium text-green-600 shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Try Free for 14 Days
+              Chat with GANNET
             </Link>
             <Link
-              href="/book-demo"
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj"
               className="rounded-lg bg-green-500 px-8 py-4 text-center text-base font-medium text-white shadow-lg ring-1 ring-white/20 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book a Demo
             </Link>
           </div>
 
           <p className="mt-8 text-sm text-green-100">
-            No credit card required. Cancel anytime.
+          No commitment required. Customized to your humanitarian needs.
           </p>
         </motion.div>
       </div>

@@ -73,7 +73,7 @@ export default function Support() {
             We're here to help
           </p>
           <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-            Our dedicated support team is available to assist you with any questions or issues.
+          Our dedicated humanitarian support team is available to assist you with any questions or issues.
           </p>
         </div>
 
@@ -119,19 +119,19 @@ export default function Support() {
             <div className="p-8 md:p-12 bg-gannetGreen text-white md:max-w-md">
               <h3 className="text-2xl font-bold">Get in touch</h3>
               <p className="mt-4 text-green-100">
-                Have a specific question or need personalized support? Fill out the form and we'll get back to you as soon as possible.
+              Have a specific question or need personalized support? Fill out the form and we'll get back to you as soon as possible.
               </p>
               <div className="mt-8">
                 <div className="flex items-center">
                   <FiMail className="h-6 w-6 text-green-300" />
-                  <span className="ml-3 text-green-100">support@gannet.com</span>
+                  <span className="ml-3 text-green-100">support@gannet.ai</span>
                 </div>
               </div>
               <div className="mt-12">
                 <h4 className="text-base font-semibold">Our support hours</h4>
                 <p className="mt-2 text-green-100">
-                  Monday - Friday: 9am - 6pm EST<br />
-                  Saturday: 10am - 2pm EST<br />
+                  Monday - Friday: 9am - 5pm CET<br />
+                  Saturday: Closed<br />
                   Sunday: Closed
                 </p>
               </div>
