@@ -7,40 +7,40 @@ import { FiBarChart2, FiServer, FiShield, FiUsers, FiClock, FiGlobe } from 'reac
 
 const solutions = [
   {
-    name: 'Data Analytics',
-    description: 'Transform raw data into actionable insights with our powerful analytics platform.',
+    name: 'Virtual Assistant',
+    description: 'Your AI-powered analysis staff that delivers instant, verified information when you need it most.',
     icon: FiBarChart2,
-    href: '/solutions/data-analytics',
+    href: '/solutions/virtual-assistant',
   },
   {
-    name: 'Cloud Infrastructure',
-    description: 'Scalable and secure cloud solutions to power your business operations.',
+    name: 'SituationHub',
+    description: 'Transform complex humanitarian data into actionable insights with our comprehensive crisis dashboard.',
     icon: FiServer,
-    href: '/solutions/cloud-infrastructure',
+    href: '/solutions/situation-hub',
   },
   {
-    name: 'Security Management',
-    description: 'Protect your critical assets with our advanced security framework.',
+    name: 'Media Monitoring',
+    description: 'Stay ahead with 24/7 monitoring of global news, social media, and local sources, all verified for accuracy.',
     icon: FiShield,
-    href: '/solutions/security',
+    href: '/solutions/media-monitoring',
   },
   {
-    name: 'Team Collaboration',
-    description: 'Streamline communication and boost productivity across your organization.',
+    name: 'Data Analysis',
+    description: 'Make data-driven decisions with automated situation analysis combining AI efficiency with human expertise.',
     icon: FiUsers,
-    href: '/solutions/collaboration',
+    href: '/solutions/data-analysis',
   },
   {
-    name: 'Process Automation',
-    description: 'Automate repetitive tasks and workflows to save time and reduce errors.',
+    name: 'Multi-lingual Support',
+    description: 'Break down language barriers with ingestion and analysis support for English, French, Spanish, and Arabic.',
     icon: FiClock,
-    href: '/solutions/automation',
+    href: '/solutions/multi-lingual-support',
   },
   {
-    name: 'Global Deployment',
-    description: 'Deploy your solutions worldwide with our distributed infrastructure.',
+    name: 'Secure Data',
+    description: 'Protect sensitive humanitarian data with our Private Context functionality (coming soon).',
     icon: FiGlobe,
-    href: '/solutions/deployment',
+    href: '/solutions/secure-data',
   },
 ];
 
@@ -63,10 +63,10 @@ export default function Solutions() {
         <div className="text-center mb-16">
           <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Solutions</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
-            Comprehensive solutions for modern businesses
+          Comprehensive solutions for humanitarian organizations
           </p>
           <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-            Our cutting-edge platform offers a range of powerful solutions to address your business challenges.
+          Our cutting-edge platform offers a range of powerful solutions designed specifically for humanitarian contexts.
           </p>
         </div>
 

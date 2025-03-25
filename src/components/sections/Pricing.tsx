@@ -20,16 +20,16 @@ type PricingTier = {
 
 const pricingTiers: PricingTier[] = [
   {
-    name: 'Starter',
+    name: 'Basic',
     id: 'tier-starter',
     price: { monthly: '$29', annually: '$24' },
-    description: 'Perfect for small teams and startups just getting started.',
+    description: 'Perfect for small NGOs and local humanitarian teams.',
     features: [
       'Up to 5 team members',
-      '20GB storage',
-      'Basic analytics',
-      'API access',
+      'SituationHub access (limited countries)',
+      'Virtual Assistant (basic queries)',
       'Email support',
+      'Community access',
     ],
     cta: {
       text: 'Start with Starter',
@@ -40,15 +40,14 @@ const pricingTiers: PricingTier[] = [
     name: 'Professional',
     id: 'tier-professional',
     price: { monthly: '$79', annually: '$69' },
-    description: 'Ideal for growing teams needing more power and features.',
+    description: 'Ideal for mid-sized humanitarian organizations.',
     features: [
-      'Up to 20 team members',
-      '100GB storage',
-      'Advanced analytics',
-      'API access',
-      'Priority email support',
-      'Advanced security',
-      'Custom integrations',
+      'Up to 50 team members',
+      'Full SituationHub access',
+      'Advanced Virtual Assistant',
+      'Media monitoring',
+      'Priority support',
+      'Custom data integration',
     ],
     cta: {
       text: 'Start with Professional',
@@ -60,17 +59,17 @@ const pricingTiers: PricingTier[] = [
     name: 'Enterprise',
     id: 'tier-enterprise',
     price: { monthly: '$199', annually: '$179' },
-    description: 'For large organizations with complex needs and custom requirements.',
+    description: 'For large international organizations with complex needs.',
     features: [
       'Unlimited team members',
-      '500GB storage',
+      'Complete platform access',
       'Full analytics suite',
-      'Unlimited API access',
+      'Custom country deployments',
       '24/7 dedicated support',
       'Advanced security',
       'Custom integrations',
       'Dedicated account manager',
-      'Custom onboarding',
+      'Customized onboarding',
     ],
     cta: {
       text: 'Contact Sales',
@@ -88,10 +87,10 @@ export default function Pricing() {
         <div className="text-center mb-16">
           <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Pricing</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
-            Choose the perfect plan for your business
+          Choose the perfect plan for your organization
           </p>
           <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-            No hidden fees, no surprise charges. Start with a 14-day free trial.
+          No hidden fees, flexible sponsorship options available.
           </p>
           
           {/* Billing toggle */}
@@ -182,15 +181,15 @@ export default function Pricing() {
         </div>
         
         <div className="mt-16 text-center bg-gray-50 rounded-xl p-10">
-          <h3 className="text-xl font-medium text-gray-900">Need a custom solution?</h3>
+          <h3 className="text-xl font-medium text-gray-900">Need a sponsored solution?</h3>
           <p className="mt-2 text-gray-600">
-            Our enterprise plan can be tailored to your company's specific requirements.
+          We offer sponsorship options for humanitarian organizations operating in resource-constrained environments.
           </p>
           <Link
             href="/contact-sales"
             className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
           >
-            Contact Our Sales Team
+            Contact Our Team
           </Link>
         </div>
       </div>

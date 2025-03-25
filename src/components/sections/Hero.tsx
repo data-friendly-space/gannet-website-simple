@@ -68,7 +68,7 @@ export default function Hero() {
                 ))}
               </div>
               <div className="text-gray-700">
-                <span className="font-semibold">500+</span> satisfied customers
+                <span className="font-semibold">500+</span> satisfied users
               </div>
             </div>
           </motion.div>

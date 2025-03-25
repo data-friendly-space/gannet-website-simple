@@ -61,14 +61,18 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link 
-              href="/try-now" 
+              href="https://app.gannet.ai/sign-in" 
               className="text-gannetGreen hover:text-gannetGreen/80 px-4 py-2 text-sm font-medium transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Try Free
+              Chat with GANNET
             </Link>
             <Link 
-              href="/book-demo" 
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
               className="bg-gannetGreen hover:bg-gannetGreen/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book a Demo
             </Link>
@@ -108,16 +112,20 @@ export default function Navbar() {
               ))}
               <div className="mt-4 flex flex-col space-y-3 px-3 pb-3">
                 <Link 
-                  href="/try-now" 
+                  href="https://app.gannet.ai/sign-in" 
                   className="text-gannetGreen hover:text-gannetGreen/80 py-2 text-base font-medium"
                   onClick={() => setIsOpen(false)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Try Free
+                  Chat with GANNET
                 </Link>
                 <Link 
-                  href="/book-demo" 
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
                   className="bg-gannetGreen hover:bg-gannetGreen/90 text-white px-4 py-2 rounded-lg text-base font-medium text-center"
                   onClick={() => setIsOpen(false)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Book a Demo
                 </Link>

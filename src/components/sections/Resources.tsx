@@ -8,45 +8,45 @@ import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-ic
 const resources = [
   {
     name: 'Documentation',
-    description: 'Comprehensive guides to help you understand and use our products effectively.',
+    description: 'Comprehensive guides to help you understand and use our humanitarian tools effectively.',
     icon: FiBookOpen,
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
     href: '/resources/documentation',
   },
   {
     name: 'API Reference',
-    description: 'Detailed API documentation for developers to integrate with our platform.',
+    description: 'Detailed API documentation for technical teams to integrate GANNET with existing systems. (coming soon)',
     icon: FiFileText,
     image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
     href: '/resources/api-reference',
   },
   {
     name: 'Video Tutorials',
-    description: 'Step-by-step video guides to help you get up and running quickly.',
+    description: 'Step-by-step video guides to help field teams get up and running quickly.',
     icon: FiVideo,
     image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
     href: '/resources/tutorials',
   },
   {
-    name: 'Developer Hub',
-    description: 'Resources specifically designed for developers building with our platform.',
+    name: 'Humanitarian Use Cases',
+    description: 'Real-world examples of how GANNET tools are transforming crisis response.',
     icon: FiCpu,
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/developers',
+    href: '/resources/humanitarian-use-cases',
   },
   {
-    name: 'Product Guides',
-    description: 'Learn how to maximize your productivity with our products.',
+    name: 'Implementation Guides',
+    description: "Learn how to maximize your organization's impact with our products.",
     icon: FiBox,
     image: 'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/guides',
+    href: '/resources/implementation-guides',
   },
   {
-    name: 'Community Forum',
-    description: 'Connect with other users to share ideas, ask questions, and get help.',
+    name: 'Partner Network',
+    description: 'Connect with other humanitarian organizations to share ideas and best practices.',
     icon: FiUsers,
     image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/community',
+    href: '/resources/partner-network',
   },
 ];
 
@@ -60,7 +60,7 @@ export default function Resources() {
             Everything you need to succeed
           </p>
           <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-            Explore our comprehensive resources designed to help you get the most out of our platform.
+          Explore our comprehensive resources designed to help humanitarian organizations maximize their impact.
           </p>
         </div>
 
