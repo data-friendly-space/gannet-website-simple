@@ -55,10 +55,10 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">GANNET</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-gannetGreen to-gannetLightGreen bg-clip-text text-transparent">GANNET</span>
             </Link>
             <p className="mt-4 text-gray-600 text-sm">
-              Powerful technology solutions for modern businesses. Streamline your workflow and boost productivity.
+            AI-powered humanitarian tools for effective crisis response. Transform complex data into actionable insights and enhance your organization's impact.
             </p>
             <div className="mt-6 flex space-x-4">
               {socialLinks.map((link) => {

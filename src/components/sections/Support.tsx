@@ -68,12 +68,12 @@ export default function Support() {
     <section id="support" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">Support</h2>
+          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Support</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
             We're here to help
           </p>
           <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-            Our dedicated support team is available to assist you with any questions or issues.
+          Our dedicated humanitarian support team is available to assist you with any questions or issues.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function Support() {
                 viewport={{ once: true }}
                 className="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-blue-600 text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-gannetGreen text-white">
                   <Icon className="h-6 w-6" />
                 </div>
                 <h3 className="mt-4 text-lg font-medium text-gray-900">{option.name}</h3>
@@ -97,7 +97,7 @@ export default function Support() {
                 <div className="mt-4">
                   <Link
                     href={option.href}
-                    className="text-blue-600 hover:text-blue-800 font-medium text-sm"
+                    className="text-gannetGreen hover:text-gannetGreen/80 font-medium text-sm"
                   >
                     Learn more →
                   </Link>
@@ -116,22 +116,22 @@ export default function Support() {
           className="mt-16 bg-white rounded-2xl shadow-lg overflow-hidden"
         >
           <div className="md:flex">
-            <div className="p-8 md:p-12 bg-blue-600 text-white md:max-w-md">
+            <div className="p-8 md:p-12 bg-gannetGreen text-white md:max-w-md">
               <h3 className="text-2xl font-bold">Get in touch</h3>
-              <p className="mt-4 text-blue-100">
-                Have a specific question or need personalized support? Fill out the form and we'll get back to you as soon as possible.
+              <p className="mt-4 text-green-100">
+              Have a specific question or need personalized support? Fill out the form and we'll get back to you as soon as possible.
               </p>
               <div className="mt-8">
                 <div className="flex items-center">
-                  <FiMail className="h-6 w-6 text-blue-300" />
-                  <span className="ml-3 text-blue-100">support@gannet.com</span>
+                  <FiMail className="h-6 w-6 text-green-300" />
+                  <span className="ml-3 text-green-100">support@gannet.ai</span>
                 </div>
               </div>
               <div className="mt-12">
                 <h4 className="text-base font-semibold">Our support hours</h4>
-                <p className="mt-2 text-blue-100">
-                  Monday - Friday: 9am - 6pm EST<br />
-                  Saturday: 10am - 2pm EST<br />
+                <p className="mt-2 text-green-100">
+                  Monday - Friday: 9am - 5pm CET<br />
+                  Saturday: Closed<br />
                   Sunday: Closed
                 </p>
               </div>
@@ -150,7 +150,7 @@ export default function Support() {
                     Thank you for contacting us. We'll respond to your message as soon as possible.
                   </p>
                   <button
-                    className="mt-6 text-blue-600 font-medium"
+                    className="mt-6 text-green-600 font-medium"
                     onClick={() => setFormStatus('idle')}
                   >
                     Send another message
@@ -169,7 +169,7 @@ export default function Support() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                       placeholder="Your name"
                     />
                   </div>
@@ -185,7 +185,7 @@ export default function Support() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -200,7 +200,7 @@ export default function Support() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                     >
                       <option value="">Select a topic</option>
                       <option value="general">General inquiry</option>
@@ -222,7 +222,7 @@ export default function Support() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                       placeholder="How can we help you?"
                     />
                   </div>
@@ -231,9 +231,9 @@ export default function Support() {
                     <button
                       type="submit"
                       disabled={formStatus === 'submitting'}
-                      className={`w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 ${
-                        formStatus === 'submitting' ? 'opacity-75 cursor-not-allowed' : 'hover:bg-blue-700'
-                      } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
+                      className={`w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gannetGreen ${
+                        formStatus === 'submitting' ? 'opacity-75 cursor-not-allowed' : 'hover:bg-gannetGreen/90'
+                      } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen`}
                     >
                       {formStatus === 'submitting' ? 'Sending...' : 'Send Message'}
                     </button>

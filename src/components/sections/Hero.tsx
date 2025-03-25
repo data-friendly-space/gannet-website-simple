@@ -24,26 +24,30 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
-              <span className="block">Elevate Your Business with</span>
-              <span className="block mt-2 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                GANNET Technology
+              <span className="block">Elevate Your Analysis with</span>
+              <span className="block mt-2 bg-gradient-to-r from-gannetGreen to-gannetLightGreen bg-clip-text text-transparent">
+                GANNET Tools
               </span>
             </h1>
             
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0">
-              Powerful, intuitive solutions designed to streamline your workflow, boost productivity, and drive growth. Experience the future of business technology.
+            GANNET is a Generative AI initiative offering ethical, AI-powered tools to provide accessible, real-time information, enhancing efficiency and driving impactful growth in the humanitarian sector.
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <Link
-                href="/try-now"
-                className="bg-blue-600 text-white px-6 py-3 text-center text-base font-medium shadow-sm hover:bg-blue-700 rounded-lg"
+                href="https://app.gannet.ai/sign-in"
+                className="bg-gannetGreen text-white px-6 py-3 text-center text-base font-medium shadow-sm hover:bg-gannetGreen/90 rounded-lg"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Try Free for 14 Days
+                Chat with GANNET
               </Link>
               <Link
-                href="/book-demo"
-                className="bg-white text-blue-600 px-6 py-3 text-center text-base font-medium shadow-sm border border-blue-600 hover:bg-gray-50 rounded-lg"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj"
+                className="bg-white text-gannetGreen px-6 py-3 text-center text-base font-medium shadow-sm border border-gannetGreen hover:bg-gray-50 rounded-lg"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Book a Demo
               </Link>
@@ -64,7 +68,7 @@ export default function Hero() {
                 ))}
               </div>
               <div className="text-gray-700">
-                <span className="font-semibold">500+</span> satisfied customers
+                <span className="font-semibold">500+</span> satisfied users
               </div>
             </div>
           </motion.div>
@@ -78,7 +82,7 @@ export default function Hero() {
           >
             <div className="relative h-[400px] lg:h-[500px] w-full">
               <Image
-                src="https://images.unsplash.com/photo-1581089781785-603411fa81e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                src="/images/gannet-hero.png"
                 alt="GANNET Platform Dashboard"
                 fill
                 className="object-contain rounded-2xl shadow-xl"

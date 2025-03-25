@@ -8,45 +8,45 @@ import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-ic
 const resources = [
   {
     name: 'Documentation',
-    description: 'Comprehensive guides to help you understand and use our products effectively.',
+    description: 'Comprehensive guides to help you understand and use our humanitarian tools effectively.',
     icon: FiBookOpen,
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
     href: '/resources/documentation',
   },
   {
     name: 'API Reference',
-    description: 'Detailed API documentation for developers to integrate with our platform.',
+    description: 'Detailed API documentation for technical teams to integrate GANNET with existing systems. (coming soon)',
     icon: FiFileText,
     image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
     href: '/resources/api-reference',
   },
   {
     name: 'Video Tutorials',
-    description: 'Step-by-step video guides to help you get up and running quickly.',
+    description: 'Step-by-step video guides to help field teams get up and running quickly.',
     icon: FiVideo,
     image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
     href: '/resources/tutorials',
   },
   {
-    name: 'Developer Hub',
-    description: 'Resources specifically designed for developers building with our platform.',
+    name: 'Humanitarian Use Cases',
+    description: 'Real-world examples of how GANNET tools are transforming crisis response.',
     icon: FiCpu,
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/developers',
+    href: '/resources/humanitarian-use-cases',
   },
   {
-    name: 'Product Guides',
-    description: 'Learn how to maximize your productivity with our products.',
+    name: 'Implementation Guides',
+    description: "Learn how to maximize your organization's impact with our products.",
     icon: FiBox,
     image: 'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/guides',
+    href: '/resources/implementation-guides',
   },
   {
-    name: 'Community Forum',
-    description: 'Connect with other users to share ideas, ask questions, and get help.',
+    name: 'Partner Network',
+    description: 'Connect with other humanitarian organizations to share ideas and best practices.',
     icon: FiUsers,
     image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/community',
+    href: '/resources/partner-network',
   },
 ];
 
@@ -55,12 +55,12 @@ export default function Resources() {
     <section id="resources" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">Resources</h2>
+          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Resources</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
             Everything you need to succeed
           </p>
           <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-            Explore our comprehensive resources designed to help you get the most out of our platform.
+          Explore our comprehensive resources designed to help humanitarian organizations maximize their impact.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function Resources() {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/20" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="flex items-center">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-md bg-blue-600 text-white">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gannetGreen text-white">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="ml-3 text-xl font-semibold text-white">{resource.name}</h3>
@@ -103,7 +103,7 @@ export default function Resources() {
         <div className="mt-16 text-center">
           <Link
             href="/resources"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
           >
             Browse All Resources
             <svg

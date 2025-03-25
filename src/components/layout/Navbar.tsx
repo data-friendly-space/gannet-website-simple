@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">GANNET</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-gannetGreen to-gannetLightGreen bg-clip-text text-transparent">GANNET</span>
             </Link>
           </div>
 
@@ -61,14 +61,18 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link 
-              href="/try-now" 
-              className="text-blue-600 hover:text-blue-800 px-4 py-2 text-sm font-medium transition-colors"
+              href="https://app.gannet.ai/sign-in" 
+              className="text-gannetGreen hover:text-gannetGreen/80 px-4 py-2 text-sm font-medium transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Try Free
+              Chat with GANNET
             </Link>
             <Link 
-              href="/book-demo" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
+              className="bg-gannetGreen hover:bg-gannetGreen/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book a Demo
             </Link>
@@ -78,7 +82,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gannetGreen focus:outline-none"
             >
               {isOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
             </button>
@@ -100,7 +104,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                  className="text-gray-700 hover:text-gannetGreen block px-3 py-2 text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -108,16 +112,20 @@ export default function Navbar() {
               ))}
               <div className="mt-4 flex flex-col space-y-3 px-3 pb-3">
                 <Link 
-                  href="/try-now" 
-                  className="text-blue-600 hover:text-blue-800 py-2 text-base font-medium"
+                  href="https://app.gannet.ai/sign-in" 
+                  className="text-gannetGreen hover:text-gannetGreen/80 py-2 text-base font-medium"
                   onClick={() => setIsOpen(false)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Try Free
+                  Chat with GANNET
                 </Link>
                 <Link 
-                  href="/book-demo" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-base font-medium text-center"
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
+                  className="bg-gannetGreen hover:bg-gannetGreen/90 text-white px-4 py-2 rounded-lg text-base font-medium text-center"
                   onClick={() => setIsOpen(false)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Book a Demo
                 </Link>
