@@ -129,12 +129,12 @@ export default function Pricing() {
               viewport={{ once: true }}
               className={`relative bg-white rounded-2xl shadow-md ring-1 overflow-hidden ${
                 tier.highlighted
-                  ? 'ring-blue-500 scale-105 z-10 shadow-xl'
+                  ? 'ring-gannetGreen scale-105 z-10 shadow-xl'
                   : 'ring-gray-200'
               }`}
             >
               {tier.highlighted && (
-                <div className="absolute top-0 right-0 left-0 bg-blue-600 py-1.5 text-center">
+                <div className="absolute top-0 right-0 left-0 bg-gannetGreen py-1.5 text-center">
                   <p className="text-xs font-medium text-white uppercase tracking-wide">
                     Most Popular
                   </p>
@@ -157,7 +157,7 @@ export default function Pricing() {
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start">
                       <div className="flex-shrink-0">
-                        <FiCheck className="h-5 w-5 text-blue-500" />
+                        <FiCheck className="h-5 w-5 text-gannetGreen" />
                       </div>
                       <p className="ml-3 text-sm text-gray-700">{feature}</p>
                     </li>
@@ -169,9 +169,9 @@ export default function Pricing() {
                     href={tier.cta.href}
                     className={`block w-full py-3 px-4 rounded-md text-center text-sm font-medium ${
                       tier.highlighted
-                        ? 'bg-blue-600 text-white hover:bg-blue-700'
-                        : 'bg-blue-50 text-blue-700 hover:bg-blue-100'
-                    } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
+                        ? 'bg-gannetGreen text-white hover:bg-gannetGreen/90'
+                        : 'bg-green-50 text-gannetGreen hover:bg-green-100'
+                    } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen`}
                   >
                     {tier.cta.text}
                   </Link>
@@ -188,7 +188,7 @@ export default function Pricing() {
           </p>
           <Link
             href="/contact-sales"
-            className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
           >
             Contact Our Sales Team
           </Link>

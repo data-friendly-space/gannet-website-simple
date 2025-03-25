@@ -86,7 +86,7 @@ export default function Resources() {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/20" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="flex items-center">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-md bg-blue-600 text-white">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gannetGreen text-white">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="ml-3 text-xl font-semibold text-white">{resource.name}</h3>
@@ -103,7 +103,7 @@ export default function Resources() {
         <div className="mt-16 text-center">
           <Link
             href="/resources"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
           >
             Browse All Resources
             <svg

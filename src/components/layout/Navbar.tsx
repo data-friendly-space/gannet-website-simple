@@ -62,13 +62,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <Link 
               href="/try-now" 
-              className="text-blue-600 hover:text-blue-800 px-4 py-2 text-sm font-medium transition-colors"
+              className="text-gannetGreen hover:text-gannetGreen/80 px-4 py-2 text-sm font-medium transition-colors"
             >
               Try Free
             </Link>
             <Link 
               href="/book-demo" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              className="bg-gannetGreen hover:bg-gannetGreen/90 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Book a Demo
             </Link>
@@ -78,7 +78,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gannetGreen focus:outline-none"
             >
               {isOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
             </button>
@@ -100,7 +100,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                  className="text-gray-700 hover:text-gannetGreen block px-3 py-2 text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -109,14 +109,14 @@ export default function Navbar() {
               <div className="mt-4 flex flex-col space-y-3 px-3 pb-3">
                 <Link 
                   href="/try-now" 
-                  className="text-blue-600 hover:text-blue-800 py-2 text-base font-medium"
+                  className="text-gannetGreen hover:text-gannetGreen/80 py-2 text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   Try Free
                 </Link>
                 <Link 
                   href="/book-demo" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-base font-medium text-center"
+                  className="bg-gannetGreen hover:bg-gannetGreen/90 text-white px-4 py-2 rounded-lg text-base font-medium text-center"
                   onClick={() => setIsOpen(false)}
                 >
                   Book a Demo

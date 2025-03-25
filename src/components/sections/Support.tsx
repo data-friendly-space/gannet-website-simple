@@ -89,7 +89,7 @@ export default function Support() {
                 viewport={{ once: true }}
                 className="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-blue-600 text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-gannetGreen text-white">
                   <Icon className="h-6 w-6" />
                 </div>
                 <h3 className="mt-4 text-lg font-medium text-gray-900">{option.name}</h3>
@@ -97,7 +97,7 @@ export default function Support() {
                 <div className="mt-4">
                   <Link
                     href={option.href}
-                    className="text-blue-600 hover:text-blue-800 font-medium text-sm"
+                    className="text-gannetGreen hover:text-gannetGreen/80 font-medium text-sm"
                   >
                     Learn more →
                   </Link>
@@ -116,9 +116,9 @@ export default function Support() {
           className="mt-16 bg-white rounded-2xl shadow-lg overflow-hidden"
         >
           <div className="md:flex">
-            <div className="p-8 md:p-12 bg-blue-600 text-white md:max-w-md">
+            <div className="p-8 md:p-12 bg-gannetGreen text-white md:max-w-md">
               <h3 className="text-2xl font-bold">Get in touch</h3>
-              <p className="mt-4 text-blue-100">
+              <p className="mt-4 text-green-100">
                 Have a specific question or need personalized support? Fill out the form and we'll get back to you as soon as possible.
               </p>
               <div className="mt-8">
@@ -169,7 +169,7 @@ export default function Support() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                       placeholder="Your name"
                     />
                   </div>
@@ -185,7 +185,7 @@ export default function Support() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -200,7 +200,7 @@ export default function Support() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                     >
                       <option value="">Select a topic</option>
                       <option value="general">General inquiry</option>
@@ -222,7 +222,7 @@ export default function Support() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm px-4 py-2 border"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gannetGreen focus:ring-gannetGreen sm:text-sm px-4 py-2 border"
                       placeholder="How can we help you?"
                     />
                   </div>
@@ -231,9 +231,9 @@ export default function Support() {
                     <button
                       type="submit"
                       disabled={formStatus === 'submitting'}
-                      className={`w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 ${
-                        formStatus === 'submitting' ? 'opacity-75 cursor-not-allowed' : 'hover:bg-blue-700'
-                      } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
+                      className={`w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gannetGreen ${
+                        formStatus === 'submitting' ? 'opacity-75 cursor-not-allowed' : 'hover:bg-gannetGreen/90'
+                      } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen`}
                     >
                       {formStatus === 'submitting' ? 'Sending...' : 'Send Message'}
                     </button>

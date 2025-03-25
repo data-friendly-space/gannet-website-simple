@@ -37,13 +37,13 @@ export default function Hero() {
             <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <Link
                 href="/try-now"
-                className="bg-blue-600 text-white px-6 py-3 text-center text-base font-medium shadow-sm hover:bg-blue-700 rounded-lg"
+                className="bg-gannetGreen text-white px-6 py-3 text-center text-base font-medium shadow-sm hover:bg-gannetGreen/90 rounded-lg"
               >
                 Try Free for 14 Days
               </Link>
               <Link
                 href="/book-demo"
-                className="bg-white text-blue-600 px-6 py-3 text-center text-base font-medium shadow-sm border border-blue-600 hover:bg-gray-50 rounded-lg"
+                className="bg-white text-gannetGreen px-6 py-3 text-center text-base font-medium shadow-sm border border-gannetGreen hover:bg-gray-50 rounded-lg"
               >
                 Book a Demo
               </Link>
