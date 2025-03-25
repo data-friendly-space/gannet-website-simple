@@ -61,7 +61,7 @@ export default function Solutions() {
     <section id="solutions" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">Solutions</h2>
+          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Solutions</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
             Comprehensive solutions for modern businesses
           </p>
@@ -83,8 +83,8 @@ export default function Solutions() {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <div className="h-full flex flex-col rounded-2xl bg-white p-8 shadow-md ring-1 ring-gray-200 transition-all duration-300 hover:shadow-xl hover:ring-blue-500 hover:-translate-y-1">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500 text-white">
+                <div className="h-full flex flex-col rounded-2xl bg-white p-8 shadow-md ring-1 ring-gray-200 transition-all duration-300 hover:shadow-xl hover:ring-green-500 hover:-translate-y-1">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-green-500 text-white">
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 className="mt-6 text-lg font-medium text-gray-900">{solution.name}</h3>
@@ -92,7 +92,7 @@ export default function Solutions() {
                   <div className="mt-6 flex-grow flex items-end">
                     <Link
                       href={solution.href}
-                      className="text-blue-600 hover:text-blue-800 font-medium flex items-center"
+                      className="text-green-600 hover:text-green-800 font-medium flex items-center"
                     >
                       Learn more
                       <svg

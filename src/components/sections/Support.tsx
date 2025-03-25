@@ -68,7 +68,7 @@ export default function Support() {
     <section id="support" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">Support</h2>
+          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Support</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
             We're here to help
           </p>
@@ -123,13 +123,13 @@ export default function Support() {
               </p>
               <div className="mt-8">
                 <div className="flex items-center">
-                  <FiMail className="h-6 w-6 text-blue-300" />
-                  <span className="ml-3 text-blue-100">support@gannet.com</span>
+                  <FiMail className="h-6 w-6 text-green-300" />
+                  <span className="ml-3 text-green-100">support@gannet.com</span>
                 </div>
               </div>
               <div className="mt-12">
                 <h4 className="text-base font-semibold">Our support hours</h4>
-                <p className="mt-2 text-blue-100">
+                <p className="mt-2 text-green-100">
                   Monday - Friday: 9am - 6pm EST<br />
                   Saturday: 10am - 2pm EST<br />
                   Sunday: Closed
@@ -150,7 +150,7 @@ export default function Support() {
                     Thank you for contacting us. We'll respond to your message as soon as possible.
                   </p>
                   <button
-                    className="mt-6 text-blue-600 font-medium"
+                    className="mt-6 text-green-600 font-medium"
                     onClick={() => setFormStatus('idle')}
                   >
                     Send another message

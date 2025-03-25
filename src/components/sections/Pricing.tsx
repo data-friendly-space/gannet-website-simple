@@ -86,7 +86,7 @@ export default function Pricing() {
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-blue-600 tracking-wide uppercase">Pricing</h2>
+          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Pricing</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
             Choose the perfect plan for your business
           </p>
@@ -113,7 +113,7 @@ export default function Pricing() {
                 } ml-0.5 relative py-2 px-6 border-transparent rounded-full text-sm font-medium whitespace-nowrap focus:outline-none focus:z-10 transition-colors`}
                 onClick={() => setAnnual(true)}
               >
-                Annually <span className="text-blue-600 font-medium">Save 15%</span>
+                Annually <span className="text-green-600 font-medium">Save 15%</span>
               </button>
             </div>
           </div>

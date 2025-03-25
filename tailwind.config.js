@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         gannetGreen: '#73cf23',
+        gannetLightGreen: '#d0f0c0',
         primary: {
           50: '#f0f9ff',
           100: '#e0f2fe',
