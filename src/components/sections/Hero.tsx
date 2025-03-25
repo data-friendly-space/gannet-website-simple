@@ -36,14 +36,18 @@ export default function Hero() {
             
             <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <Link
-                href="/try-now"
+                href="https://app.gannet.ai/sign-in"
                 className="bg-gannetGreen text-white px-6 py-3 text-center text-base font-medium shadow-sm hover:bg-gannetGreen/90 rounded-lg"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Try Free
+                Chat with GANNET
               </Link>
               <Link
-                href="/book-demo"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj"
                 className="bg-white text-gannetGreen px-6 py-3 text-center text-base font-medium shadow-sm border border-gannetGreen hover:bg-gray-50 rounded-lg"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Book a Demo
               </Link>
