@@ -1,3 +1,4 @@
+# Cloudflare Pages configuration
 [build]
 command = "npm run build"
 node_compat = true
@@ -8,4 +9,10 @@ bucket = ".next"
 
 # Add this for Cloudflare Pages configuration
 [pages]
-pages_build_output_dir = ".vercel/output/static" 
+compatibility_date = "2024-06-15"
+compatibility_flags = ["nodejs_compat"]
+
+# Define the output directory for the built assets
+[pages.build]
+command = "npm run build"
+output_directory = ".vercel/output/static" 

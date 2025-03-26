@@ -1,13 +1,19 @@
 /**
- * Configuration for Cloudflare Pages
+ * Cloudflare Pages configuration
+ * @type {import('@cloudflare/pages').PagesConfig}
  */
 export default {
-  // Ensure your app is built in production mode
-  build: {
-    env: {
-      NODE_ENV: 'production'
+  routes: [
+    {
+      pattern: '/:path*',
+      script: 'default', // Use the default edge worker
     }
-  },
-  // Configure Cloudflare Pages to use the Next.js output
-  output: "export"
+  ],
+  buildConfig: {
+    minify: true,
+    env: {
+      NODE_ENV: 'production',
+      NEXT_RUNTIME: 'edge',
+    }
+  }
 } 
