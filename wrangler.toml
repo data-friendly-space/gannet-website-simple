@@ -4,4 +4,8 @@ node_compat = true
 node_version = "18.18.0"
 
 [site]
-bucket = ".next" 
+bucket = ".next"
+
+# Add this for Cloudflare Pages configuration
+[pages]
+pages_build_output_dir = ".vercel/output/static" 

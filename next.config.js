@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const { withOnPagesInit } = require('@cloudflare/next-on-pages/init');
+const nextOnPages = require('@cloudflare/next-on-pages');
 
 const nextConfig = {
   images: {
@@ -7,4 +7,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withOnPagesInit(nextConfig); 
+module.exports = nextOnPages(nextConfig); 
