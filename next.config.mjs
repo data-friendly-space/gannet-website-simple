@@ -2,8 +2,9 @@
 const nextConfig = {
   images: {
     domains: ['images.unsplash.com', 'randomuser.me'],
+    unoptimized: true,
   },
-  // Add output config for Cloudflare Pages
+  // Configure for Cloudflare Pages deployment
   output: 'export',
 };
 

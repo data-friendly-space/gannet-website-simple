@@ -58,7 +58,7 @@ export default function Footer() {
               <span className="text-2xl font-bold bg-gradient-to-r from-gannetGreen to-gannetLightGreen bg-clip-text text-transparent">GANNET</span>
             </Link>
             <p className="mt-4 text-gray-600 text-sm">
-            AI-powered humanitarian tools for effective crisis response. Transform complex data into actionable insights and enhance your organization's impact.
+            AI-powered humanitarian tools for effective crisis response. Transform complex data into actionable insights and enhance your organization&apos;s impact.
             </p>
             <div className="mt-6 flex space-x-4">
               {socialLinks.map((link) => {

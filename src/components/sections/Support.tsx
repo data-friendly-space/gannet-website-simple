@@ -70,7 +70,7 @@ export default function Support() {
         <div className="text-center mb-16">
           <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Support</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
-            We're here to help
+            We&apos;re here to help
           </p>
           <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
           Our dedicated humanitarian support team is available to assist you with any questions or issues.
@@ -119,7 +119,7 @@ export default function Support() {
             <div className="p-8 md:p-12 bg-gannetGreen text-white md:max-w-md">
               <h3 className="text-2xl font-bold">Get in touch</h3>
               <p className="mt-4 text-green-100">
-              Have a specific question or need personalized support? Fill out the form and we'll get back to you as soon as possible.
+              Have a specific question or need personalized support? Fill out the form and we&apos;ll get back to you as soon as possible.
               </p>
               <div className="mt-8">
                 <div className="flex items-center">
@@ -147,7 +147,7 @@ export default function Support() {
                   </div>
                   <h3 className="mt-4 text-xl font-medium text-gray-900">Message sent!</h3>
                   <p className="mt-2 text-gray-500">
-                    Thank you for contacting us. We'll respond to your message as soon as possible.
+                    Thank you for contacting us. We&apos;ll respond to your message as soon as possible.
                   </p>
                   <button
                     className="mt-6 text-green-600 font-medium"
