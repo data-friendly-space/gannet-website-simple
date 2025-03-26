@@ -1,18 +1,12 @@
-# Cloudflare Pages configuration
+# Simplified Cloudflare Pages configuration
+name = "gannet-website"
+
 [build]
-command = "npm run build"
-node_compat = true
-node_version = "18.18.0"
+command = "npm run cloudflare:build"
+
+[build.environment]
+NODE_VERSION = "18.18.0"
+NPM_FLAGS = "--no-audit --no-fund"
 
 [site]
-bucket = ".next"
-
-# Add this for Cloudflare Pages configuration
-[pages]
-compatibility_date = "2024-06-15"
-compatibility_flags = ["nodejs_compat"]
-
-# Define the output directory for the built assets
-[pages.build]
-command = "npm run build"
-output_directory = ".vercel/output/static" 
+bucket = ".vercel/output/static" 
