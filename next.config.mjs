@@ -6,6 +6,7 @@ const nextConfig = {
   },
   // Configure for Cloudflare Pages deployment
   output: 'export',
+  distDir: 'out',
 };
 
 export default nextConfig; 

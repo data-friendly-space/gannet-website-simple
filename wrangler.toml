@@ -4,17 +4,7 @@ compatibility_date = "2024-06-15"
 compatibility_flags = ["nodejs_compat"]
 
 [build]
-command = "npm run build && npm run pages:build"
-node_compat = true
-node_version = "18.18.0"
-
-[site]
-bucket = ".vercel/output/static"
-
-# Add this for Cloudflare Pages configuration
-[pages]
-compatibility_date = "2024-06-15"
-compatibility_flags = ["nodejs_compat"]
+command = "npm run build"
 
 # Define the output directory for the built assets
-pages_build_output_dir = ".vercel/output/static" 
+pages_build_output_dir = "out" 
