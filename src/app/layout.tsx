@@ -7,8 +7,8 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GANNET - Advanced Tech Solutions",
-  description: "Powerful technology solutions for modern businesses. Streamline your workflow and boost productivity.",
+  title: "GANNET - AI-Powered Humanitarian Tools",
+  description: "AI-powered humanitarian tools for effective crisis response. Transform complex data into actionable insights and enhance your organization's impact.",
 };
 
 export default function RootLayout({
