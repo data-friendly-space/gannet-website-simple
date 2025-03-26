@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^1.13.10",
     "@headlessui/react": "^2.2.0",
     "framer-motion": "^12.6.0",
     "next": "15.2.4",
