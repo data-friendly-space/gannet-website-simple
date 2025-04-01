@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiBarChart2, FiServer, FiShield, FiUsers, FiClock, FiGlobe } from 'react-icons/fi';
+import { useTheme } from '@/components/ui/ThemeContext';
 
 const solutions = [
   {
@@ -56,16 +57,28 @@ const fadeInUp = {
 };
 
 export default function Solutions() {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
+  const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-white';
+  const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
+  const subheadingClass = isDark ? 'text-gannetGreen' : 'text-green-600';
+  const textClass = isDark ? 'text-gray-400' : 'text-gray-500';
+  const cardBgClass = isDark ? 'bg-gannetCardBg' : 'bg-white';
+  const cardBorderClass = isDark ? 'ring-gray-700' : 'ring-gray-200';
+  const cardHoverBorderClass = isDark ? 'hover:ring-gannetGreen' : 'hover:ring-green-500';
+  const linkClass = isDark ? 'text-gannetGreen hover:text-gannetGreen/80' : 'text-green-600 hover:text-green-800';
+
   return (
-    <section id="solutions" className="py-20 bg-white">
+    <section id="solutions" className={`py-20 ${bgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Solutions</h2>
-          <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
-          Comprehensive solutions for humanitarian organizations
+          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Solutions</h2>
+          <p className={`mt-2 text-3xl font-bold ${headingClass} sm:text-4xl`}>
+            Comprehensive solutions for humanitarian organizations
           </p>
-          <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-          Our cutting-edge platform offers a range of powerful solutions designed specifically for humanitarian contexts.
+          <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
+            Our cutting-edge platform offers a range of powerful solutions designed specifically for humanitarian contexts.
           </p>
         </div>
 
@@ -82,16 +95,16 @@ export default function Solutions() {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <div className="h-full flex flex-col rounded-2xl bg-white p-8 shadow-md ring-1 ring-gray-200 transition-all duration-300 hover:shadow-xl hover:ring-green-500 hover:-translate-y-1">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-green-500 text-white">
+                <div className={`h-full flex flex-col rounded-2xl ${cardBgClass} p-8 shadow-md ring-1 ${cardBorderClass} transition-all duration-300 hover:shadow-xl ${cardHoverBorderClass} hover:-translate-y-1`}>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gannetGreen text-gannetDarkBg">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h3 className="mt-6 text-lg font-medium text-gray-900">{solution.name}</h3>
-                  <p className="mt-2 text-base text-gray-500">{solution.description}</p>
+                  <h3 className={`mt-6 text-lg font-medium ${headingClass}`}>{solution.name}</h3>
+                  <p className={`mt-2 text-base ${textClass}`}>{solution.description}</p>
                   <div className="mt-6 flex-grow flex items-end">
                     <Link
                       href={solution.href}
-                      className="text-green-600 hover:text-green-800 font-medium flex items-center"
+                      className={`${linkClass} font-medium flex items-center`}
                     >
                       Learn more
                       <svg

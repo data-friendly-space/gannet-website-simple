@@ -8,8 +8,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gannetGreen: '#73cf23',
+        gannetGreen: '#7ad575',
         gannetLightGreen: '#d0f0c0',
+        gannetBlue: '#3b82f6',
+        gannetDarkBg: '#121823',
+        gannetCardBg: '#1b2436',
+        gannetNavBg: '#121823',
+        gannetTextLight: '#e4e6eb',
+        gannetAccent: {
+          green: '#7ad575',
+          blue: '#3b82f6',
+          purple: '#a855f7',
+          yellow: '#facc15',
+        },
+        gannetNumber: {
+          1: '#7ad575', 
+          2: '#3b82f6',
+          3: '#a855f7',
+          4: '#facc15',
+          5: '#ef4444',
+        },
         primary: {
           50: '#f0f9ff',
           100: '#e0f2fe',

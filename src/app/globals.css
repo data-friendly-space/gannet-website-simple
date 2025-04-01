@@ -7,16 +7,30 @@
   --background-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
-  }
+[data-theme="dark"] {
+  --foreground-rgb: 228, 230, 235;
+  --background-rgb: 18, 24, 35;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+.light-mode {
+  @apply bg-white text-gray-900;
+}
+
+.dark-mode {
+  @apply bg-gannetDarkBg text-gannetTextLight;
+}
+
+.card-light {
+  @apply bg-white shadow-md;
+}
+
+.card-dark {
+  @apply bg-gannetCardBg shadow-md;
 }
 
 /* Custom styles */

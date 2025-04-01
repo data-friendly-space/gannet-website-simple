@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-icons/fi';
+import { useTheme } from '@/components/ui/ThemeContext';
 
 const resources = [
   {
@@ -51,16 +52,29 @@ const resources = [
 ];
 
 export default function Resources() {
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
+  const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-gray-50';
+  const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
+  const subheadingClass = isDark ? 'text-gannetGreen' : 'text-green-600';
+  const textClass = isDark ? 'text-gray-400' : 'text-gray-500';
+  const cardOverlayClass = isDark 
+    ? 'from-gannetCardBg/90 to-gannetCardBg/20' 
+    : 'from-gray-900/90 to-gray-900/20';
+  const cardTextClass = isDark ? 'text-gannetTextLight' : 'text-white';
+  const cardDescriptionClass = isDark ? 'text-gray-400' : 'text-gray-300';
+
   return (
-    <section id="resources" className="py-20 bg-gray-50">
+    <section id="resources" className={`py-20 ${bgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Resources</h2>
-          <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
+          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Resources</h2>
+          <p className={`mt-2 text-3xl font-bold ${headingClass} sm:text-4xl`}>
             Everything you need to succeed
           </p>
-          <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-          Explore our comprehensive resources designed to help humanitarian organizations maximize their impact.
+          <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
+            Explore our comprehensive resources designed to help humanitarian organizations maximize their impact.
           </p>
         </div>
 
@@ -83,15 +97,15 @@ export default function Resources() {
                     fill
                     className="object-cover transform transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/20" />
+                  <div className={`absolute inset-0 bg-gradient-to-t ${cardOverlayClass}`} />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="flex items-center">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gannetGreen text-white">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gannetGreen text-gannetDarkBg">
                         <Icon className="h-5 w-5" />
                       </div>
-                      <h3 className="ml-3 text-xl font-semibold text-white">{resource.name}</h3>
+                      <h3 className={`ml-3 text-xl font-semibold ${cardTextClass}`}>{resource.name}</h3>
                     </div>
-                    <p className="mt-2 text-sm text-gray-300">{resource.description}</p>
+                    <p className={`mt-2 text-sm ${cardDescriptionClass}`}>{resource.description}</p>
                   </div>
                 </div>
                 <Link href={resource.href} className="absolute inset-0" aria-label={`View ${resource.name}`} />
@@ -103,7 +117,7 @@ export default function Resources() {
         <div className="mt-16 text-center">
           <Link
             href="/resources"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-gannetDarkBg bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
           >
             Browse All Resources
             <svg

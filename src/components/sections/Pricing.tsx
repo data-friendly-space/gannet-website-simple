@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiCheck } from 'react-icons/fi';
+import { useTheme } from '@/components/ui/ThemeContext';
 
 type PricingTier = {
   name: string;
@@ -80,26 +81,40 @@ const pricingTiers: PricingTier[] = [
 
 export default function Pricing() {
   const [annual, setAnnual] = useState(true);
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+
+  const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-white';
+  const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
+  const subheadingClass = isDark ? 'text-gannetGreen' : 'text-green-600';
+  const textClass = isDark ? 'text-gray-400' : 'text-gray-500';
+  const cardBgClass = isDark ? 'bg-gannetCardBg' : 'bg-white';
+  const cardBorderClass = isDark ? 'ring-gray-700' : 'ring-gray-200';
+  const toggleBgClass = isDark ? 'bg-gray-800' : 'bg-gray-100';
+  const toggleActiveClass = isDark ? 'bg-gannetCardBg shadow-sm text-gannetTextLight' : 'bg-white shadow-sm text-gray-900';
+  const toggleInactiveClass = isDark ? 'text-gray-400' : 'text-gray-500';
+  const featureTextClass = isDark ? 'text-gray-300' : 'text-gray-700';
+  const sponsoredBgClass = isDark ? 'bg-gannetCardBg' : 'bg-gray-50';
 
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className={`py-20 ${bgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-green-600 tracking-wide uppercase">Pricing</h2>
-          <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
-          Choose the perfect plan for your organization
+          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Pricing</h2>
+          <p className={`mt-2 text-3xl font-bold ${headingClass} sm:text-4xl`}>
+            Choose the perfect plan for your organization
           </p>
-          <p className="mt-5 max-w-2xl mx-auto text-xl text-gray-500">
-          No hidden fees, flexible sponsorship options available.
+          <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
+            No hidden fees, flexible sponsorship options available.
           </p>
           
           {/* Billing toggle */}
           <div className="mt-12 flex justify-center">
-            <div className="relative bg-gray-100 p-1 rounded-full flex">
+            <div className={`relative ${toggleBgClass} p-1 rounded-full flex`}>
               <button
                 type="button"
                 className={`${
-                  !annual ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500'
+                  !annual ? toggleActiveClass : toggleInactiveClass
                 } relative py-2 px-6 border-transparent rounded-full text-sm font-medium whitespace-nowrap focus:outline-none focus:z-10 transition-colors`}
                 onClick={() => setAnnual(false)}
               >
@@ -108,11 +123,11 @@ export default function Pricing() {
               <button
                 type="button"
                 className={`${
-                  annual ? 'bg-white shadow-sm text-gray-900' : 'text-gray-500'
+                  annual ? toggleActiveClass : toggleInactiveClass
                 } ml-0.5 relative py-2 px-6 border-transparent rounded-full text-sm font-medium whitespace-nowrap focus:outline-none focus:z-10 transition-colors`}
                 onClick={() => setAnnual(true)}
               >
-                Annually <span className="text-green-600 font-medium">Save 15%</span>
+                Annually <span className="text-gannetGreen font-medium">Save 15%</span>
               </button>
             </div>
           </div>
@@ -126,15 +141,15 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`relative bg-white rounded-2xl shadow-md ring-1 overflow-hidden ${
+              className={`relative ${cardBgClass} rounded-2xl shadow-md ring-1 overflow-hidden ${
                 tier.highlighted
                   ? 'ring-gannetGreen scale-105 z-10 shadow-xl'
-                  : 'ring-gray-200'
+                  : cardBorderClass
               }`}
             >
               {tier.highlighted && (
                 <div className="absolute top-0 right-0 left-0 bg-gannetGreen py-1.5 text-center">
-                  <p className="text-xs font-medium text-white uppercase tracking-wide">
+                  <p className="text-xs font-medium text-gannetDarkBg uppercase tracking-wide">
                     Most Popular
                   </p>
                 </div>
@@ -142,14 +157,14 @@ export default function Pricing() {
               
               <div className="p-8 pt-6">
                 <div className={tier.highlighted ? 'pt-4' : ''}>
-                  <h3 className="text-lg font-semibold text-gray-900">{tier.name}</h3>
+                  <h3 className={`text-lg font-semibold ${headingClass}`}>{tier.name}</h3>
                   <p className="mt-4 flex items-baseline">
-                    <span className="text-4xl font-bold text-gray-900">
+                    <span className={`text-4xl font-bold ${headingClass}`}>
                       {annual ? tier.price.annually : tier.price.monthly}
                     </span>
-                    <span className="ml-1 text-xl font-medium text-gray-500">/month</span>
+                    <span className={`ml-1 text-xl font-medium ${textClass}`}>/month</span>
                   </p>
-                  <p className="mt-2 text-sm text-gray-500">{tier.description}</p>
+                  <p className={`mt-2 text-sm ${textClass}`}>{tier.description}</p>
                 </div>
 
                 <ul className="mt-8 space-y-4">
@@ -158,7 +173,7 @@ export default function Pricing() {
                       <div className="flex-shrink-0">
                         <FiCheck className="h-5 w-5 text-gannetGreen" />
                       </div>
-                      <p className="ml-3 text-sm text-gray-700">{feature}</p>
+                      <p className={`ml-3 text-sm ${featureTextClass}`}>{feature}</p>
                     </li>
                   ))}
                 </ul>
@@ -168,7 +183,9 @@ export default function Pricing() {
                     href={tier.cta.href}
                     className={`block w-full py-3 px-4 rounded-md text-center text-sm font-medium ${
                       tier.highlighted
-                        ? 'bg-gannetGreen text-white hover:bg-gannetGreen/90'
+                        ? 'bg-gannetGreen text-gannetDarkBg hover:bg-gannetGreen/90'
+                        : isDark
+                        ? 'bg-gannetGreen/20 text-gannetGreen hover:bg-gannetGreen/30'
                         : 'bg-green-50 text-gannetGreen hover:bg-green-100'
                     } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen`}
                   >
@@ -180,14 +197,14 @@ export default function Pricing() {
           ))}
         </div>
         
-        <div className="mt-16 text-center bg-gray-50 rounded-xl p-10">
-          <h3 className="text-xl font-medium text-gray-900">Need a sponsored solution?</h3>
-          <p className="mt-2 text-gray-600">
-          We offer sponsorship options for humanitarian organizations operating in resource-constrained environments.
+        <div className={`mt-16 text-center ${sponsoredBgClass} rounded-xl p-10`}>
+          <h3 className={`text-xl font-medium ${headingClass}`}>Need a sponsored solution?</h3>
+          <p className={`mt-2 ${textClass}`}>
+            We offer sponsorship options for humanitarian organizations operating in resource-constrained environments.
           </p>
           <Link
             href="/contact-sales"
-            className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
+            className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-gannetDarkBg bg-gannetGreen hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gannetGreen"
           >
             Contact Our Team
           </Link>
