@@ -63,7 +63,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {/* Virtual Assistant */}
-            <div className={`${cardBg} rounded-xl shadow-lg p-6 border-2 border-transparent hover:border-gannetGreen transition-all`}>
+            <div className={`${cardBg} rounded-xl shadow-lg p-6 border-2 border-transparent hover:border-gannetGreen transition-all flex flex-col`}>
               <div className="flex items-center mb-4">
                 <div className="p-3 bg-gannetGreen rounded-lg">
                   <FiMessageSquare className="h-6 w-6 text-gannetDarkBg" />
@@ -73,7 +73,7 @@ export default function Hero() {
               <p className={`${textClass} mb-4`}>
                 GANNET Virtual Assistant is an AI-powered chatbot that turns complex data into clear, actionable insights, helping organizations respond quickly and make better decisions.
               </p>
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-6 mt-auto">
                 <div className="relative w-[70%] aspect-video rounded-lg overflow-hidden shadow-md">
                   <video
                     className="w-full h-full object-cover"
@@ -87,7 +87,7 @@ export default function Hero() {
                   </video>
                 </div>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 mt-auto">
                 <p className={`text-gannetGreen font-medium text-center`}>
                   Ready to learn more? Discover how it works
                 </p>
@@ -117,46 +117,60 @@ export default function Hero() {
             </div>
 
             {/* Situation Hubs */}
-            <div className={`${cardBg} rounded-xl shadow-lg p-6 border-2 border-transparent hover:border-gannetBlue transition-all`}>
+            <div className={`${cardBg} rounded-xl shadow-lg p-6 border-2 border-transparent hover:border-gannetBlue transition-all flex flex-col`}>
               <div className="flex items-center mb-4">
                 <div className="p-3 bg-gannetBlue rounded-lg">
                   <FiMap className="h-6 w-6 text-gannetDarkBg" />
                 </div>
                 <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Situation Hubs</h2>
               </div>
-              <p className={`${textClass} mb-6`}>
+              <p className={`${textClass} mb-4`}>
                 GANNET SituationHub is an AI-powered platform that transforms complex humanitarian data into clear insights, helping organizations respond faster and more effectively.
               </p>
-              <div className="space-y-4">
+              <div className="flex justify-center mb-6 mt-auto">
+                <div className="relative w-[70%] aspect-video rounded-lg overflow-hidden shadow-md">
+                  <video
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/images/gannet-sithub-demo.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div className="space-y-4 mt-auto">
                 <p className={`text-gannetBlue font-medium text-center`}>
                   🌍 Explore Active Crisis Regions
                 </p>
                 <div className="flex flex-col md:flex-row justify-center gap-6">
                   <Link
                     href="https://analysis.gannet.ai/lebanon"
-                    className={`group relative flex flex-col items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    className={`group relative flex flex-col items-center justify-center px-8 py-1 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className={`${tagText} font-semibold mb-1.5 text-lg`}>Lebanon</span>
+                    <span className={`${tagText} font-semibold text-lg`}>Lebanon</span>
                     <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
                   </Link>
                   <Link
                     href="https://analysis.gannet.ai/sudan"
-                    className={`group relative flex flex-col items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    className={`group relative flex flex-col items-center justify-center px-8 py-1 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className={`${tagText} font-semibold mb-1.5 text-lg`}>Sudan</span>
+                    <span className={`${tagText} font-semibold text-lg`}>Sudan</span>
                     <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
                   </Link>
                   <Link
                     href="https://analysis.gannet.ai/myanmar"
-                    className={`group relative flex flex-col items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    className={`group relative flex flex-col items-center justify-center px-8 py-1 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className={`${tagText} font-semibold mb-1.5 text-lg`}>Myanmar</span>
+                    <span className={`${tagText} font-semibold text-lg`}>Myanmar</span>
                     <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
                   </Link>
                 </div>
