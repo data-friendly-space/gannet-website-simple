@@ -9,7 +9,6 @@ export default function TermsOfUsePage() {
   const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-white';
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-600';
-  const borderClass = isDark ? 'border-gray-800' : 'border-gray-200';
 
   return (
     <div className={`${bgClass} min-h-screen pt-24 pb-16`}>
@@ -22,7 +21,7 @@ export default function TermsOfUsePage() {
           </p>
           
           <p>
-            These Terms of Use govern your use of GANNET products and services operated by Data Friendly Space (hereafter referred to as "DFS"), registered at 700 E Main St Unit 707, Richmond, Virginia 23218, USA.
+            These Terms of Use govern your use of GANNET products and services operated by Data Friendly Space (hereafter referred to as &quot;DFS&quot;), registered at 700 E Main St Unit 707, Richmond, Virginia 23218, USA.
           </p>
           
           <p>
@@ -38,7 +37,7 @@ export default function TermsOfUsePage() {
           </p>
           
           <p>
-            You agree to use the service only for lawful purposes and in a way that does not infringe upon the rights of others or restrict or inhibit anyone else's use of the service.
+            You agree to use the service only for lawful purposes and in a way that does not infringe upon the rights of others or restrict or inhibit anyone else&apos;s use of the service.
           </p>
           
           <p>
@@ -102,7 +101,7 @@ export default function TermsOfUsePage() {
           </p>
           
           <p>
-            We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+            We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days&apos; notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
           </p>
           
           <p>
@@ -118,7 +117,7 @@ export default function TermsOfUsePage() {
           </p>
           
           <p>
-            The GANNET service is provided "as is" and "as available" without any warranties of any kind, either express or implied, including but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+            The GANNET service is provided &quot;as is&quot; and &quot;as available&quot; without any warranties of any kind, either express or implied, including but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
           </p>
           
           <p>
@@ -137,7 +136,7 @@ export default function TermsOfUsePage() {
             <strong>By email:</strong> hello@datafriendlyspace.org
           </p>
           
-          <p className="mt-4 pt-4 border-t ${borderClass}">
+          <p className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
             Last Updated: April 2024
           </p>
         </div>

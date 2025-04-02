@@ -9,7 +9,6 @@ export default function PrivacyPolicyPage() {
   const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-white';
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-600';
-  const borderClass = isDark ? 'border-gray-800' : 'border-gray-200';
 
   return (
     <div className={`${bgClass} min-h-screen pt-24 pb-16`}>
@@ -127,7 +126,7 @@ export default function PrivacyPolicyPage() {
           </p>
           
           <p>
-            <strong className={headingClass}>11. Children's Privacy</strong>
+            <strong className={headingClass}>11. Children&apos;s Privacy</strong>
           </p>
           
           <p>
@@ -139,7 +138,7 @@ export default function PrivacyPolicyPage() {
           </p>
           
           <p>
-            DFS may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+            DFS may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date.
           </p>
           
           <p>
@@ -154,7 +153,7 @@ export default function PrivacyPolicyPage() {
             <strong>By email:</strong> hello@datafriendlyspace.org
           </p>
           
-          <p className="mt-4 pt-4 border-t ${borderClass}">
+          <p className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
             Last Updated: April 2024
           </p>
         </div>
