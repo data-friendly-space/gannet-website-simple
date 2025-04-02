@@ -21,7 +21,6 @@ export default function Hero() {
   const cardBg = isDark ? 'bg-gannetCardBg' : 'bg-white';
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-600';
-  const ctaTextClass = isDark ? 'text-gannetDarkBg' : 'text-white';
   const tagBg = isDark ? 'bg-gannetBlue/20' : 'bg-blue-50';
   const tagText = isDark ? 'text-gannetBlue' : 'text-blue-800';
   const tagHover = isDark ? 'hover:bg-gannetBlue/30' : 'hover:bg-blue-100';
@@ -94,7 +93,7 @@ export default function Hero() {
                 </p>
                 <Link
                   href="https://app.gannet.ai/sign-in"
-                  className={`group flex items-center justify-center px-8 py-3 bg-gannetGreen text-gannetDarkBg font-bold rounded-lg transition-all duration-300 hover:bg-gannetGreen/90 hover:scale-105 shadow-md hover:shadow-lg`}
+                  className="group flex items-center justify-center px-8 py-3 bg-gannetGreen text-gannetDarkBg font-bold rounded-lg transition-all duration-300 hover:bg-gannetGreen/90 hover:scale-105 shadow-md hover:shadow-lg"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
