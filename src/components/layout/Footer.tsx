@@ -70,7 +70,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/GANNET_Logo_Green.png"
+                src={isDark ? "/images/GANNET_Logo_Green.png" : "/images/GANNET_Logo_Green_Dark.png"}
                 alt="GANNET Logo"
                 width={180}
                 height={60}
