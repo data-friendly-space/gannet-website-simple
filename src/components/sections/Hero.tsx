@@ -73,16 +73,35 @@ export default function Hero() {
                 <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Virtual Assistant</h2>
               </div>
               <p className={`${textClass} mb-6`}>
-                Your AI-powered analysis staff that delivers instant, verified information when you need it most.
+                GANNET Virtual Assistant is an AI-powered chatbot that turns complex data into clear, actionable insights, helping organizations respond quickly and make better decisions.
               </p>
-              <Link
-                href="https://app.gannet.ai/sign-in"
-                className={`w-full block bg-gannetGreen text-${ctaTextClass} px-4 py-3 text-center font-medium shadow-sm hover:bg-gannetGreen/90 rounded-lg transition-colors`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat with GANNET
-              </Link>
+              <div className="space-y-4">
+                <p className={`text-gannetGreen font-medium text-center`}>
+                  Ready to learn more? Discover how it works
+                </p>
+                <Link
+                  href="https://app.gannet.ai/sign-in"
+                  className={`group flex items-center justify-center px-8 py-3 bg-gannetGreen text-${ctaTextClass} rounded-lg transition-all duration-300 hover:bg-gannetGreen/90 hover:scale-105 shadow-md hover:shadow-lg`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="font-medium">Chat with GANNET</span>
+                  <svg 
+                    className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24" 
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth="2" 
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </Link>
+              </div>
             </div>
 
             {/* Situation Hubs */}
@@ -93,41 +112,53 @@ export default function Hero() {
                 </div>
                 <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Situation Hubs</h2>
               </div>
-              <p className={`${textClass} mb-4`}>
-                Comprehensive crisis dashboards with real-time data and insights for humanitarian operations.
+              <p className={`${textClass} mb-6`}>
+                GANNET SituationHub is an AI-powered platform that transforms complex humanitarian data into clear insights, helping organizations respond faster and more effectively.
               </p>
-              <div className="grid grid-cols-3 gap-2 mb-6">
-                <Link
-                  href="https://analysis.gannet.ai/lebanon"
-                  className={`text-center py-2 px-1 ${tagBg} ${tagText} rounded ${tagHover} text-sm font-medium`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Lebanon
-                </Link>
-                <Link
-                  href="https://analysis.gannet.ai/sudan"
-                  className={`text-center py-2 px-1 ${tagBg} ${tagText} rounded ${tagHover} text-sm font-medium`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sudan
-                </Link>
-                <Link
-                  href="https://analysis.gannet.ai/myanmar"
-                  className={`text-center py-2 px-1 ${tagBg} ${tagText} rounded ${tagHover} text-sm font-medium`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Myanmar
-                </Link>
+              <div className="space-y-4">
+                <p className={`text-gannetBlue font-medium text-center`}>
+                  🌍 Explore Active Crisis Regions
+                </p>
+                <div className="flex flex-col md:flex-row justify-center gap-6">
+                  <Link
+                    href="https://analysis.gannet.ai/lebanon"
+                    className={`group relative flex flex-col items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={`${tagText} font-semibold mb-1.5 text-lg`}>Lebanon</span>
+                    <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
+                  </Link>
+                  <Link
+                    href="https://analysis.gannet.ai/sudan"
+                    className={`group relative flex flex-col items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={`${tagText} font-semibold mb-1.5 text-lg`}>Sudan</span>
+                    <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
+                  </Link>
+                  <Link
+                    href="https://analysis.gannet.ai/myanmar"
+                    className={`group relative flex flex-col items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className={`${tagText} font-semibold mb-1.5 text-lg`}>Myanmar</span>
+                    <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
+                  </Link>
+                </div>
+                <div className={`text-center mt-4`}>
+                  <p className={`text-sm ${textClass} italic`}>
+                    Select a region to access the latest humanitarian insights and analysis
+                  </p>
+                  <div className="flex items-center justify-center mt-2 text-gannetBlue">
+                    <span className="animate-pulse">●</span>
+                    <span className="mx-1 animate-pulse" style={{ animationDelay: '0.2s' }}>●</span>
+                    <span className="animate-pulse" style={{ animationDelay: '0.4s' }}>●</span>
+                  </div>
+                </div>
               </div>
-              <Link
-                href="/solutions/situation-hub"
-                className={`w-full block border border-gannetBlue text-gannetBlue px-4 py-3 text-center font-medium shadow-sm ${buttonHoverClass} rounded-lg transition-colors`}
-              >
-                Learn More
-              </Link>
             </div>
           </motion.div>
 
