@@ -58,9 +58,19 @@ export default function Footer() {
 
         <div className={`mt-12 pt-8 border-t ${borderClass}`}>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className={`${textClass} text-sm`}>
-              &copy; {new Date().getFullYear()} GANNET. All rights reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center">
+              <p className={`${textClass} text-sm`}>
+                &copy; {new Date().getFullYear()} GANNET. All rights reserved.
+              </p>
+              <div className="flex space-x-6 mt-2 md:mt-0 md:ml-6">
+                <Link href="/privacy" className={`${textClass} ${hoverClass} text-sm transition-colors`}>
+                  Privacy Policy
+                </Link>
+                <Link href="/terms" className={`${textClass} ${hoverClass} text-sm transition-colors`}>
+                  Terms of Use
+                </Link>
+              </div>
+            </div>
             <div className="flex items-center mt-4 md:mt-0">
               <span className={`${textClass} text-sm mr-3`}>Created by</span>
               <a 

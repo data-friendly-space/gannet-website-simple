@@ -9,6 +9,7 @@ import { useTheme } from '@/components/ui/ThemeContext';
 import Image from 'next/image';
 
 const navLinks = [
+  { name: 'Home', href: '/' },
   { name: 'Solutions', href: '/#solutions' },
   { name: 'Resources', href: '/#resources' },
   { name: 'Support', href: '/#support' },
