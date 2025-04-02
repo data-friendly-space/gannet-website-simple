@@ -22,13 +22,12 @@ export default function Hero() {
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-600';
   const ctaTextClass = isDark ? 'text-gannetDarkBg' : 'text-white';
-  const buttonHoverClass = isDark ? 'hover:bg-gannetBlue/10' : 'hover:bg-gray-50';
   const tagBg = isDark ? 'bg-gannetBlue/20' : 'bg-blue-50';
   const tagText = isDark ? 'text-gannetBlue' : 'text-blue-800';
   const tagHover = isDark ? 'hover:bg-gannetBlue/30' : 'hover:bg-blue-100';
 
   return (
-    <section className={`relative pt-20 overflow-hidden ${bgClass}`}>
+    <section className={`relative pt-12 overflow-hidden ${bgClass}`}>
       {/* Background gradient and decorative elements */}
       <div className={`absolute inset-0 bg-gradient-to-br ${gradientBg} -z-10`} />
       
@@ -36,7 +35,7 @@ export default function Hero() {
       <div className="absolute top-24 right-0 w-1/3 h-1/3 bg-gradient-to-br from-gannetBlue/10 to-gannetAccent.purple/10 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-gannetGreen/10 to-gannetAccent.blue/10 rounded-full blur-3xl -z-10" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
         <div className="flex flex-col items-center">
           {/* Hero content */}
           <motion.div 
@@ -72,20 +71,34 @@ export default function Hero() {
                 </div>
                 <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Virtual Assistant</h2>
               </div>
-              <p className={`${textClass} mb-6`}>
+              <p className={`${textClass} mb-4`}>
                 GANNET Virtual Assistant is an AI-powered chatbot that turns complex data into clear, actionable insights, helping organizations respond quickly and make better decisions.
               </p>
+              <div className="flex justify-center mb-6">
+                <div className="relative w-[70%] aspect-video rounded-lg overflow-hidden shadow-md">
+                  <video
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source src="/images/gannet-virtual-assistant-demo.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
               <div className="space-y-4">
                 <p className={`text-gannetGreen font-medium text-center`}>
                   Ready to learn more? Discover how it works
                 </p>
                 <Link
                   href="https://app.gannet.ai/sign-in"
-                  className={`group flex items-center justify-center px-8 py-3 bg-gannetGreen text-${ctaTextClass} rounded-lg transition-all duration-300 hover:bg-gannetGreen/90 hover:scale-105 shadow-md hover:shadow-lg`}
+                  className={`group flex items-center justify-center px-8 py-3 bg-gannetGreen text-gannetDarkBg font-bold rounded-lg transition-all duration-300 hover:bg-gannetGreen/90 hover:scale-105 shadow-md hover:shadow-lg`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="font-medium">Chat with GANNET</span>
+                  <span>Chat with GANNET</span>
                   <svg 
                     className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" 
                     fill="none" 

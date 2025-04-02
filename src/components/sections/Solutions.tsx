@@ -1,6 +1,5 @@
 "use client";
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiBarChart2, FiServer, FiShield, FiUsers, FiClock, FiGlobe } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
@@ -67,7 +66,6 @@ export default function Solutions() {
   const cardBgClass = isDark ? 'bg-gannetCardBg' : 'bg-white';
   const cardBorderClass = isDark ? 'ring-gray-700' : 'ring-gray-200';
   const cardHoverBorderClass = isDark ? 'hover:ring-gannetGreen' : 'hover:ring-green-500';
-  const linkClass = isDark ? 'text-gannetGreen hover:text-gannetGreen/80' : 'text-green-600 hover:text-green-800';
 
   return (
     <section id="solutions" className={`py-20 ${bgClass}`}>

@@ -117,12 +117,6 @@ export default function Navbar() {
                           {hub.name}
                         </Link>
                       ))}
-                      <Link
-                        href="/solutions/situation-hub"
-                        className={`block px-4 py-2 text-sm font-medium text-gannetGreen border-t ${mobileDivider}`}
-                      >
-                        Learn More
-                      </Link>
                     </div>
                   )}
                 </div>
@@ -220,13 +214,6 @@ export default function Navbar() {
                           {hub.name}
                         </Link>
                       ))}
-                      <Link
-                        href="/solutions/situation-hub"
-                        className="block px-3 py-2 text-sm font-medium text-gannetGreen"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Learn More
-                      </Link>
                     </div>
                   )}
                 </div>
