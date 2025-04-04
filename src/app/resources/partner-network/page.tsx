@@ -82,11 +82,13 @@ export default function PartnerNetworkPage() {
             </p>
           </div>
           <div className="relative h-64 md:h-auto rounded-lg overflow-hidden">
-            <div className="w-full h-full bg-gray-300">
-              <img
+            <div className="w-full h-full bg-gray-300 relative">
+              <Image
                 src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
                 alt="Partner Network"
-                className="w-full h-full object-cover"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'cover' }}
               />
             </div>
           </div>
@@ -105,7 +107,7 @@ export default function PartnerNetworkPage() {
             </div>
             <h3 className={`text-xl font-bold mb-3 ${headingClass}`}>Technology Partners</h3>
             <p className={`${textClass}`}>
-              Integrate your technology with Gannet's platform to create powerful solutions
+              Integrate your technology with Gannet&apos;s platform to create powerful solutions
               for mutual customers. Access our APIs, SDKs, and technical documentation.
             </p>
           </div>
