@@ -12,11 +12,10 @@ export const metadata: Metadata = {
   description: "AI-powered humanitarian tools for effective crisis response. Transform complex data into actionable insights and enhance your organization's impact.",
   icons: {
     icon: [
-      { url: '/images/GANNET icon.png' }
+      { url: '/images/GANNET icon.png', type: 'image/png' },
+      { url: '/favicon.ico' }
     ],
-    apple: [
-      { url: '/images/GANNET icon.png' }
-    ]
+    apple: { url: '/images/GANNET icon.png', type: 'image/png' }
   }
 };
 
