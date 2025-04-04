@@ -24,7 +24,7 @@ const supportOptions = [
     name: 'Help Center',
     description: 'Access our growing library of guides, tutorials, and FAQs to help you make the most of GANNET tools.',
     icon: FiHelpCircle,
-    href: '/support/help-center',
+    href: '/resources',
     cta: 'Browse Resources',
   },
   {
