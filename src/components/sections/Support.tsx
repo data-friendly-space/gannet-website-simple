@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiMail, FiMessageSquare, FiHelpCircle, FiFileText } from 'react-icons/fi';
@@ -40,12 +39,6 @@ const supportOptions = [
 export default function Support() {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
 
   const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-gray-50';
   const cardBgClass = isDark ? 'bg-gannetCardBg' : 'bg-white';

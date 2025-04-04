@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiArrowLeft, FiCpu } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
@@ -136,10 +137,12 @@ export default function HumanitarianUseCasesPage() {
               <div className="md:flex">
                 <div className="md:w-2/5 relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/50 md:bg-gradient-to-l"></div>
-                  <img 
+                  <Image 
                     src={useCase.image} 
                     alt={useCase.title}
                     className="w-full h-full object-cover"
+                    width={600}
+                    height={400}
                   />
                 </div>
                 <div className="p-6 md:w-3/5">
