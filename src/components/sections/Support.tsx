@@ -40,7 +40,6 @@ const supportOptions = [
 export default function Support() {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
-  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -53,35 +52,6 @@ export default function Support() {
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
   const subheadingClass = isDark ? 'text-gannetGreen' : 'text-green-600';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-500';
-  const inputBgClass = isDark ? 'bg-gannetDarkBg' : 'bg-white';
-  const inputBorderClass = isDark ? 'border-gray-700' : 'border-gray-300';
-  const inputTextClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
-  const labelClass = isDark ? 'text-gray-300' : 'text-gray-700';
-  const successIconBgClass = isDark ? 'bg-green-900' : 'bg-green-100';
-  const successIconTextClass = isDark ? 'text-green-300' : 'text-green-500';
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormStatus('submitting');
-    
-    // Simulate form submission (replace with actual API call in a real application)
-    setTimeout(() => {
-      setFormStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
-    }, 1500);
-  };
 
   return (
     <section id="support" className={`py-20 ${bgClass}`}>

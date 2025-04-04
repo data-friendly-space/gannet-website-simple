@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiArrowLeft, FiVideo, FiPlay, FiUsers, FiLayers } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
@@ -87,7 +88,6 @@ export default function TutorialsPage() {
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-500';
   const cardBg = isDark ? 'bg-gannetCardBg' : 'bg-white';
-  const videoBg = isDark ? 'bg-gannetDarkBg/80' : 'bg-gray-900/80';
 
   const Icon = resourceInfo.icon;
 
@@ -143,17 +143,18 @@ export default function TutorialsPage() {
                 <p className="text-gray-300 mt-2">A comprehensive overview of how GANNET can enhance humanitarian response</p>
               </div>
             </div>
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
               alt="Featured tutorial" 
               className="absolute inset-0 w-full h-full object-cover opacity-40"
+              fill
             />
           </div>
         </motion.div>
 
         {/* Tutorial Categories */}
         <div className="space-y-16">
-          {categories.map((category, categoryIndex) => (
+          {categories.map((category) => (
             <motion.div
               key={category.name}
               initial={{ opacity: 0, y: 20 }}
@@ -180,10 +181,12 @@ export default function TutorialsPage() {
                     className={`${cardBg} rounded-xl shadow-md overflow-hidden`}
                   >
                     <div className="relative">
-                      <img 
+                      <Image 
                         src={tutorial.thumbnail} 
                         alt={tutorial.title}
                         className="w-full h-40 object-cover"
+                        width={500}
+                        height={200}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                       <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between items-center">

@@ -133,7 +133,7 @@ export default function ApiReferencePage() {
             <div>
               <h2 className={`text-xl font-bold ${headingClass} mb-2`}>API Documentation Coming Soon</h2>
               <p className={`${textClass}`}>
-                Our comprehensive API documentation is currently under development. When released, it will provide everything you need to integrate GANNET's powerful humanitarian data analysis capabilities into your own systems.
+                Our comprehensive API documentation is currently under development. When released, it will provide everything you need to integrate GANNET&apos;s powerful humanitarian data analysis capabilities into your own systems.
               </p>
               <div className="mt-4">
                 <Link
@@ -151,7 +151,7 @@ export default function ApiReferencePage() {
 
         {/* Content Sections */}
         <div className="space-y-12">
-          {sections.map((section, index) => {
+          {sections.map((section) => {
             const SectionIcon = section.icon;
             return (
               <motion.section

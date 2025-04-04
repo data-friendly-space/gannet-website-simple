@@ -176,7 +176,6 @@ export default function DocumentationPage() {
 
   const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-gray-50';
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
-  const subheadingClass = isDark ? 'text-gannetGreen' : 'text-green-600';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-500';
   const cardBg = isDark ? 'bg-gannetCardBg' : 'bg-white';
   const sectionBg = isDark ? 'bg-gannetCardBg/50' : 'bg-gray-50/70';

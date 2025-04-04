@@ -1,7 +1,6 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers, FiChevronRight } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
@@ -57,7 +56,6 @@ export default function ResourcesPage() {
 
   const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-gray-50';
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
-  const subheadingClass = isDark ? 'text-gannetGreen' : 'text-green-600';
   const textClass = isDark ? 'text-gray-400' : 'text-gray-500';
   const cardBg = isDark ? 'bg-gannetCardBg' : 'bg-white';
   const cardBorderHover = isDark ? 'hover:border-gannetBlue' : 'hover:border-gannetBlue';

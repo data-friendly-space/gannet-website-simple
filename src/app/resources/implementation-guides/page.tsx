@@ -69,7 +69,7 @@ export default function ImplementationGuidesPage() {
             </div>
             <h2 className={`text-2xl font-bold ${headingClass} mb-4`}>Implementation Guides Coming Soon</h2>
             <p className={`${textClass} mb-8`}>
-              We're currently developing comprehensive implementation guides to help your organization get the most out of GANNET tools. Check back soon for detailed resources.
+              We&apos;re currently developing comprehensive implementation guides to help your organization get the most out of GANNET tools. Check back soon for detailed resources.
             </p>
             <Link
               href="/resources"

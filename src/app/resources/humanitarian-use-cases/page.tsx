@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiArrowLeft, FiCpu, FiUsers, FiMap, FiBarChart2 } from 'react-icons/fi';
+import { FiArrowLeft, FiCpu } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 // Resource-specific content
@@ -124,7 +124,7 @@ export default function HumanitarianUseCasesPage() {
 
         {/* Use Cases */}
         <div className="space-y-12">
-          {useCases.map((useCase, index) => (
+          {useCases.map((useCase) => (
             <motion.div
               key={useCase.title}
               initial={{ opacity: 0, y: 20 }}
