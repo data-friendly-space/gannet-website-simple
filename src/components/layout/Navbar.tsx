@@ -136,11 +136,19 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button and Theme Toggle */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
             <ThemeToggle />
             <Link 
+              href="https://givebutter.com/gannet" 
+              className="bg-gannetBlue hover:bg-gannetBlue/90 text-white px-3 py-2 lg:px-4 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fuel Our Mission
+            </Link>
+            <Link 
               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
-              className="bg-gannetGreen hover:bg-gannetGreen/90 text-gannetDarkBg px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              className="bg-gannetGreen hover:bg-gannetGreen/90 text-gannetDarkBg px-3 py-2 lg:px-4 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -231,7 +239,16 @@ export default function Navbar() {
                 </Link>
               ))}
               
-              <div className="mt-4 px-3 pb-3">
+              <div className="mt-4 px-3 pb-3 space-y-2">
+                <Link 
+                  href="https://givebutter.com/gannet" 
+                  className="w-full block bg-gannetBlue hover:bg-gannetBlue/90 text-white px-4 py-2 rounded-lg text-base font-medium text-center"
+                  onClick={() => setIsOpen(false)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fuel Our Mission
+                </Link>
                 <Link 
                   href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
                   className="w-full block bg-gannetGreen hover:bg-gannetGreen/90 text-gannetDarkBg px-4 py-2 rounded-lg text-base font-medium text-center"

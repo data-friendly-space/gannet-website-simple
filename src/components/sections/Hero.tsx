@@ -143,7 +143,7 @@ export default function Hero() {
               </div>
               <div className="space-y-4 mt-auto">
                 <p className={`text-gannetBlue font-medium text-center`}>
-                  🌍 Explore Active Crisis Regions
+                  Explore Active Crisis Regions
                 </p>
                 <div className="flex flex-col md:flex-row justify-center gap-6">
                   <Link
@@ -210,7 +210,7 @@ export default function Hero() {
                 ))}
               </div>
               <div className={textClass}>
-                <span className={`font-semibold ${isDark ? 'text-gannetTextLight' : 'text-gray-900'}`}>500+</span> satisfied users
+                <span className={`font-semibold ${isDark ? 'text-gannetTextLight' : 'text-gray-900'}`}>500+</span> Humanitarian Decision-Makers
               </div>
             </div>
             
