@@ -51,7 +51,7 @@ export default function Hero() {
             </h1>
             
             <p className={`mt-6 text-lg md:text-xl ${textClass}`}>
-            GANNET’s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes in humanitarian response.
+            GANNET&apos;s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes in humanitarian response. and drive meaningful outcomes in humanitarian response.
             </p>
           </motion.div>
 
