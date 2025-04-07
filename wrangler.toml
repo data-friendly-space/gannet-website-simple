@@ -6,29 +6,5 @@ compatibility_flags = ["nodejs_compat"]
 [build]
 command = "npm run build"
 
-# Next.js output directory
-pages_build_output_dir = ".next"
-
-[site]
-bucket = ".next/static"
-
-[env.production]
-routes = [
-  { pattern = "/api/*", script = "api" },
-  { pattern = "/*", script = "index" }
-]
-
-# Enable Content Security Policy
-[headers]
-  [headers."/*"]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';"
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "no-referrer-when-downgrade"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-    
-# Enable caching
-[cache]
-  caching = true
-  browser_TTL = 3600
-  serve_stale = true 
+# Define the output directory for the built assets
+pages_build_output_dir = "out" 
