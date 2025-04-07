@@ -7,6 +7,11 @@ const nextConfig = {
   // Configure for Cloudflare Pages deployment
   output: 'export',
   distDir: 'out',
+  experimental: {
+    turbotrace: {
+      logLevel: 'error'
+    }
+  }
 };
 
 export default nextConfig; 
