@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', href: '/' },
-  { name: 'Solutions', href: '/#solutions' },
+  { name: 'Capabilities', href: '/#capabilities' },
   { name: 'Resources', href: '/#resources' },
   { name: 'Support', href: '/#support' },
 ];
@@ -60,7 +60,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex flex-col items-start">
               <Image
                 src={isDark ? "/images/GANNET_Logo_Green.png" : "/images/GANNET_Logo_Green_Dark.png"}
                 alt="GANNET Logo"
@@ -69,6 +69,22 @@ export default function Navbar() {
                 className="h-12 w-auto"
                 priority
               />
+              <div className="flex items-center mt-1 opacity-70 hover:opacity-100 transition-opacity">
+                <span className={`text-xs ${textClass}`}>created by</span>
+                <Link 
+                  href="https://www.datafriendlyspace.org/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/images/dfs-logo.svg"
+                    alt="Data Friendly Space Logo"
+                    width={60}
+                    height={16}
+                    className={`h-4 ml-1 ${isDark ? 'brightness-0 invert' : ''}`}
+                  />
+                </Link>
+              </div>
             </Link>
           </div>
 

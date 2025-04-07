@@ -4,42 +4,42 @@ import { motion } from 'framer-motion';
 import { FiBarChart2, FiServer, FiShield, FiUsers, FiClock, FiGlobe } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
-const solutions = [
+const capabilities = [
   {
     name: 'Virtual Assistant',
     description: 'Your AI-powered analysis staff that delivers instant, verified information when you need it most.',
     icon: FiBarChart2,
-    href: '/solutions/virtual-assistant',
+    href: '/capabilities/virtual-assistant',
   },
   {
     name: 'SituationHub',
     description: 'Transform complex humanitarian data into actionable insights with our comprehensive crisis dashboard.',
     icon: FiServer,
-    href: '/solutions/situation-hub',
+    href: '/capabilities/situation-hub',
   },
   {
     name: 'Media Monitoring',
     description: 'Stay ahead with 24/7 monitoring of global news, social media, and local sources, all verified for accuracy.',
     icon: FiShield,
-    href: '/solutions/media-monitoring',
+    href: '/capabilities/media-monitoring',
   },
   {
     name: 'Data Analysis',
     description: 'Make data-driven decisions with automated situation analysis combining AI efficiency with human expertise.',
     icon: FiUsers,
-    href: '/solutions/data-analysis',
+    href: '/capabilities/data-analysis',
   },
   {
     name: 'Multi-lingual Support',
-    description: 'Break down language barriers with ingestion and analysis support for English, French, Spanish, and Arabic.',
+    description: 'Break down language barriers with ingestion and analysis support for any Language.',
     icon: FiClock,
-    href: '/solutions/multi-lingual-support',
+    href: '/capabilities/multi-lingual-support',
   },
   {
     name: 'Secure Data',
     description: 'Protect sensitive humanitarian data with our Private Context functionality (coming soon).',
     icon: FiGlobe,
-    href: '/solutions/secure-data',
+    href: '/capabilities/secure-data',
   },
 ];
 
@@ -55,7 +55,7 @@ const fadeInUp = {
   }),
 };
 
-export default function Solutions() {
+export default function Capabilities() {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
@@ -68,24 +68,24 @@ export default function Solutions() {
   const cardHoverBorderClass = isDark ? 'hover:ring-gannetGreen' : 'hover:ring-green-500';
 
   return (
-    <section id="solutions" className={`py-20 ${bgClass}`}>
+    <section id="capabilities" className={`py-20 ${bgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Solutions</h2>
+          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Capabilities</h2>
           <p className={`mt-2 text-3xl font-bold ${headingClass} sm:text-4xl`}>
-            Comprehensive solutions for humanitarian organizations
+            Comprehensive capabilities for humanitarian organizations
           </p>
           <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
-            Our cutting-edge platform offers a range of powerful solutions designed specifically for humanitarian contexts.
+            Our cutting-edge platform offers a range of powerful capabilities designed specifically for humanitarian contexts.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {solutions.map((solution, index) => {
-            const Icon = solution.icon;
+          {capabilities.map((capability, index) => {
+            const Icon = capability.icon;
             return (
               <motion.div
-                key={solution.name}
+                key={capability.name}
                 className="relative group"
                 custom={index}
                 initial="hidden"
@@ -97,8 +97,8 @@ export default function Solutions() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gannetGreen text-gannetDarkBg">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h3 className={`mt-6 text-lg font-medium ${headingClass}`}>{solution.name}</h3>
-                  <p className={`mt-2 text-base ${textClass}`}>{solution.description}</p>
+                  <h3 className={`mt-6 text-lg font-medium ${headingClass}`}>{capability.name}</h3>
+                  <p className={`mt-2 text-base ${textClass}`}>{capability.description}</p>
                 </div>
               </motion.div>
             );

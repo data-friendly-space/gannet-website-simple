@@ -51,7 +51,7 @@ export default function Hero() {
             </h1>
             
             <p className={`mt-6 text-lg md:text-xl ${textClass}`}>
-              GANNET offers AI-powered tools that provide accessible, real-time information to enhance efficiency and drive impactful outcomes in humanitarian response.
+            GANNET’s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes in humanitarian response.
             </p>
           </motion.div>
 
@@ -71,7 +71,7 @@ export default function Hero() {
                 <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Virtual Assistant</h2>
               </div>
               <p className={`${textClass} mb-4`}>
-                GANNET Virtual Assistant is an AI-powered chatbot that turns complex data into clear, actionable insights, helping organizations respond quickly and make better decisions.
+              Consider our Virtual Assistant as a reliable teammate, providing clear answers supported by the relevant documents. You can ask questions in any language, and it will respond in the language you prefer.
               </p>
               <div className="flex justify-center mb-6 mt-auto">
                 <div className="relative w-[70%] aspect-video rounded-lg overflow-hidden shadow-md">
@@ -88,9 +88,6 @@ export default function Hero() {
                 </div>
               </div>
               <div className="space-y-4 mt-auto">
-                <p className={`text-gannetGreen font-medium text-center`}>
-                  Ready to learn more? Discover how it works
-                </p>
                 <Link
                   href="https://app.gannet.ai/sign-in"
                   className="group flex items-center justify-center px-8 py-3 bg-gannetGreen text-gannetDarkBg font-bold rounded-lg transition-all duration-300 hover:bg-gannetGreen/90 hover:scale-105 shadow-md hover:shadow-lg"
@@ -125,7 +122,7 @@ export default function Hero() {
                 <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Situation Hubs</h2>
               </div>
               <p className={`${textClass} mb-4`}>
-                GANNET SituationHub is an AI-powered platform that transforms complex humanitarian data into clear insights, helping organizations respond faster and more effectively.
+              Our Situation Hubs deliver clear information about crisis regions. While GANNET helps gather and organize the data, our team of human experts reviews everything to ensure the information you receive is both accurate and reliable.
               </p>
               <div className="flex justify-center mb-6 mt-auto">
                 <div className="relative w-[70%] aspect-video rounded-lg overflow-hidden shadow-md">
@@ -143,7 +140,7 @@ export default function Hero() {
               </div>
               <div className="space-y-4 mt-auto">
                 <p className={`text-gannetBlue font-medium text-center`}>
-                  Explore Active Crisis Regions
+                  See the crises we're monitoring
                 </p>
                 <div className="flex flex-col md:flex-row justify-center gap-6">
                   <Link
