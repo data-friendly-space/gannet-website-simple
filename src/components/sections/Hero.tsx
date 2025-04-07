@@ -140,7 +140,7 @@ export default function Hero() {
               </div>
               <div className="space-y-4 mt-auto">
                 <p className={`text-gannetBlue font-medium text-center`}>
-                  See the crises we're monitoring
+                  Explore the crises we are monitoring
                 </p>
                 <div className="flex flex-col md:flex-row justify-center gap-6">
                   <Link
