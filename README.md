@@ -1,6 +1,6 @@
 # GANNET - Tech Product Website
 
-A modern, responsive website for showcasing the GANNET tech product. Built with Next.js and Tailwind CSS.
+A modern, responsive website for showcasing the GANNET tech product. Built with Next.js 15 and Tailwind CSS.
 
 ## Features
 
@@ -9,6 +9,7 @@ A modern, responsive website for showcasing the GANNET tech product. Built with 
 - Accessible components with proper semantic HTML
 - Fast loading times with optimized images
 - SEO-friendly structure
+- Deployed on Cloudflare Pages
 
 ## Sections
 
@@ -17,22 +18,25 @@ A modern, responsive website for showcasing the GANNET tech product. Built with 
 - Resources library
 - Pricing plans
 - Support information
+- Privacy policy and Terms pages
 - Call-to-action section
 
 ## Technologies Used
 
-- [Next.js](https://nextjs.org/) - React framework
+- [Next.js](https://nextjs.org/) - React framework (v15.2.4)
+- [React](https://react.dev/) - UI library (v19.0.0)
 - [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-- [React Icons](https://react-icons.github.io/react-icons/) - Icon library
-- [Headless UI](https://headlessui.dev/) - Unstyled, accessible UI components
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework (v3.4.1)
+- [Framer Motion](https://www.framer.com/motion/) - Animation library (v12.6.0)
+- [React Icons](https://react-icons.github.io/react-icons/) - Icon library (v5.5.0)
+- [Headless UI](https://headlessui.dev/) - Unstyled, accessible UI components (v2.2.0)
+- [Cloudflare Pages](https://pages.cloudflare.com/) - Deployment platform
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18.x or later
+- Node.js 23.1.0
 - npm or yarn
 
 ### Installation
@@ -63,12 +67,27 @@ yarn dev
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
+### Deployment
+
+The website is configured to deploy on Cloudflare Pages:
+
+```bash
+# Build for production
+npm run build
+
+# Build for Cloudflare Pages
+npm run pages:build
+
+# Test Cloudflare Pages deployment locally
+npm run pages:dev
+```
+
 ## Project Structure
 
+- `src/app/` - Next.js App Router pages and routes
 - `src/components/layout/` - Layout components like Navbar and Footer
 - `src/components/sections/` - Page sections (Hero, Solutions, etc.)
 - `src/components/ui/` - Reusable UI components
-- `src/app/` - App router pages and routes
 
 ## License
 
