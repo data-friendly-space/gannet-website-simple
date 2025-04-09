@@ -122,7 +122,7 @@ export default function Hero() {
                 <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Situation Hubs</h2>
               </div>
               <p className={`${textClass} mb-4`}>
-              Our Situation Hubs deliver clear information about crisis regions. While GANNET helps gather and organize the data, our team of human experts reviews everything to ensure the information you receive is both accurate and reliable.
+              GANNET SituationHub transform real-time data into structured, automated situation analysis reports with human oversight. By combining GANNET&apos;s capabilities with DFS&apos;s humanitarian analysis expertise, SituationHub offers regular situational analysis and media monitoring, following established humanitarian frameworks.
               </p>
               <div className="flex justify-center mb-6 mt-auto">
                 <div className="relative w-[70%] aspect-video rounded-lg overflow-hidden shadow-md">
