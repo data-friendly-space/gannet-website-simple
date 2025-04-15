@@ -130,7 +130,7 @@ export default function Testimonials() {
               
               {/* Testimonial text */}
               <p className={`${textClass} text-lg mb-6 flex-grow`}>
-                "{testimonial.text}"
+                &ldquo;{testimonial.text}&rdquo;
               </p>
               
               {/* Author info */}
