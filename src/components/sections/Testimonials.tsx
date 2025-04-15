@@ -78,10 +78,10 @@ export default function Testimonials() {
     },
     {
       id: 4,
-      text: "As someone working directly with affected communities, I've seen firsthand how GANNET's technology bridges information gaps. The multilingual capabilities ensure we can communicate effectively with diverse populations.",
-      name: "Sarah Okafor",
-      role: "Community Engagement Specialist",
-      organization: "Refugee Support Network",
+      text: "GANNET has completely changed how I approach analysis. Instead of spending hours digging through documents, I can now focus on sharpening the actual insights. I can finally dedicate more time to improving the quality of analysis and supporting partners more effectively.",
+      name: "Hélène Pélisson",
+      role: "Sr. Analyst & Project Manager",
+      organization: "Data Friendly Space (DFS)",
     },
   ];
 
