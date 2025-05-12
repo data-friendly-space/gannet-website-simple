@@ -1,44 +1,44 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { FiBarChart2, FiServer, FiShield, FiUsers, FiClock, FiGlobe } from 'react-icons/fi';
+import { FiMessageSquare, FiMap, FiRadio, FiPieChart, FiGlobe, FiLock } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 const capabilities = [
   {
     name: 'Virtual Assistant',
     description: 'Your AI-powered analysis staff that delivers instant, verified information when you need it most.',
-    icon: FiBarChart2,
+    icon: FiMessageSquare,
     href: '/capabilities/virtual-assistant',
   },
   {
     name: 'SituationHub',
     description: 'Transform complex humanitarian data into actionable insights with our comprehensive crisis dashboard.',
-    icon: FiServer,
+    icon: FiMap,
     href: '/capabilities/situation-hub',
   },
   {
     name: 'Media Monitoring',
     description: 'Stay ahead with 24/7 monitoring of global news, social media, and local sources, all verified for accuracy.',
-    icon: FiShield,
+    icon: FiRadio,
     href: '/capabilities/media-monitoring',
   },
   {
     name: 'Data Analysis',
     description: 'Make data-driven decisions with automated situation analysis combining AI efficiency with human expertise.',
-    icon: FiUsers,
+    icon: FiPieChart,
     href: '/capabilities/data-analysis',
   },
   {
     name: 'Multi-lingual Support',
     description: 'Break down language barriers with ingestion and analysis support for any Language.',
-    icon: FiClock,
+    icon: FiGlobe,
     href: '/capabilities/multi-lingual-support',
   },
   {
     name: 'Secure Data',
     description: 'Protect sensitive humanitarian data with our Private Context functionality (coming soon).',
-    icon: FiGlobe,
+    icon: FiLock,
     href: '/capabilities/secure-data',
   },
 ];
