@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
             <h2 className={`text-xl font-bold ${headingClass} mb-3`}>Introduction</h2>
             <p>
               Welcome to GANNET, an AI-powered assistant developed by Data Friendly Space (DFS). 
-              We are committed to ensuring the privacy and security of our users' data. 
+              We are committed to ensuring the privacy and security of our users&apos; data. 
               This Privacy Policy outlines how we collect, use, and protect your information when you use our services.
             </p>
           </section>
@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
             <h2 className={`text-xl font-bold ${headingClass} mb-3`}>Data Sharing and Protection</h2>
             <p className="mb-3">
               <strong className={headingClass}>No Third-Party Sharing:</strong> We do not share your email address or any 
-              collected data with third parties. All data is used solely within DFS to improve GANNET's functionality 
+              collected data with third parties. All data is used solely within DFS to improve GANNET&apos;s functionality 
               and user experience.
             </p>
             <p>

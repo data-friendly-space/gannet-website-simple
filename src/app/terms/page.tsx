@@ -21,8 +21,8 @@ export default function TermsOfUsePage() {
           <section>
             <h2 className={`text-xl font-bold ${headingClass} mb-3`}>1. Introduction</h2>
             <p>
-              Welcome to GANNET, the Humanitarian AI Assistant Platform ("the Platform") provided by Data Friendly Space 
-              ("DFS", "we", "our", or "us"). These Terms of Use ("Terms") govern your access to and use of the Platform. 
+              Welcome to GANNET, the Humanitarian AI Assistant Platform (&quot;the Platform&quot;) provided by Data Friendly Space 
+              (&quot;DFS&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;). These Terms of Use (&quot;Terms&quot;) govern your access to and use of the Platform. 
               By accessing or using GANNET, you agree to be bound by these Terms. If you disagree with any part of the Terms, 
               you may not access the Platform.
             </p>
@@ -106,7 +106,7 @@ export default function TermsOfUsePage() {
             </p>
             <p className="mb-3">
               7.2. By using GANNET, you grant DFS a non-exclusive, worldwide, royalty-free license to use, process, 
-              and analyze your input data for the purposes of providing and improving the Platform's services.
+              and analyze your input data for the purposes of providing and improving the Platform&apos;s services.
             </p>
             <p className="mb-3">
               7.3. DFS does not claim ownership of the insights, reports, or other outputs generated through your use of the Platform.
@@ -135,13 +135,13 @@ export default function TermsOfUsePage() {
             </p>
             <p className="mb-3">
               8.3. To transmit any data that is unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, 
-              obscene, invasive of another's privacy, hateful, or racially, ethnically, or otherwise objectionable.
+              obscene, invasive of another&apos;s privacy, hateful, or racially, ethnically, or otherwise objectionable.
             </p>
             <p className="mb-3">
               8.4. To impersonate or attempt to impersonate DFS, a DFS employee, another user, or any other person or entity.
             </p>
             <p>
-              8.5. To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Platform, 
+              8.5. To engage in any other conduct that restricts or inhibits anyone&apos;s use or enjoyment of the Platform, 
               or which, as determined by us, may harm DFS or users of the Platform or expose them to liability.
             </p>
           </section>
@@ -155,14 +155,14 @@ export default function TermsOfUsePage() {
               patent, trade secret, and other intellectual property or proprietary rights laws.
             </p>
             <p>
-              9.2. These Terms do not grant you any right, title, interest, or license to any of DFS's intellectual property rights.
+              9.2. These Terms do not grant you any right, title, interest, or license to any of DFS&apos;s intellectual property rights.
             </p>
           </section>
           
           <section>
             <h2 className={`text-xl font-bold ${headingClass} mb-3`}>10. Disclaimer of Warranties</h2>
             <p className="mb-3">
-              10.1. GANNET is provided on an "as is" and "as available" basis, without any warranties of any kind, 
+              10.1. GANNET is provided on an &quot;as is&quot; and &quot;as available&quot; basis, without any warranties of any kind, 
               either express or implied.
             </p>
             <p className="mb-3">
@@ -181,7 +181,7 @@ export default function TermsOfUsePage() {
               resulting from your use of or inability to use the Platform.
             </p>
             <p>
-              11.2. In no event shall DFS's total liability to you for all damages exceed the amount paid by you, if any, 
+              11.2. In no event shall DFS&apos;s total liability to you for all damages exceed the amount paid by you, if any, 
               for accessing the Platform during the 12 months immediately preceding the date of the claim.
             </p>
           </section>
@@ -191,7 +191,7 @@ export default function TermsOfUsePage() {
             <p>
               You agree to indemnify, defend, and hold harmless DFS and its officers, directors, employees, agents, and affiliates 
               from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees 
-              (including reasonable attorneys' fees) arising out of or relating to your use of the Platform or your violation of these Terms.
+              (including reasonable attorneys&apos; fees) arising out of or relating to your use of the Platform or your violation of these Terms.
             </p>
           </section>
           
