@@ -63,36 +63,38 @@ export default function Support() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {supportOptions.filter(option => option.visible !== false).map((option, index) => {
-            const Icon = option.icon;
-            return (
-              <motion.div
-                key={option.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`${cardBgClass} rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1`}
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-gannetGreen text-gannetDarkBg">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <h3 className={`mt-4 text-lg font-medium ${headingClass}`}>{option.name}</h3>
-                <p className={`mt-2 text-sm ${textClass}`}>{option.description}</p>
-                <div className="mt-4">
-                  <Link
-                    href={option.href}
-                    className="text-gannetGreen hover:text-gannetGreen/80 font-medium text-sm"
-                    target={option.href.startsWith('http') || option.href.startsWith('mailto') ? '_blank' : undefined}
-                    rel={option.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  >
-                    {option.cta} →
-                  </Link>
-                </div>
-              </motion.div>
-            );
-          })}
+        <div className="flex justify-center">
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
+            {supportOptions.filter(option => option.visible !== false).map((option, index) => {
+              const Icon = option.icon;
+              return (
+                <motion.div
+                  key={option.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className={`${cardBgClass} rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1`}
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-md bg-gannetGreen text-gannetDarkBg">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <h3 className={`mt-4 text-lg font-medium ${headingClass}`}>{option.name}</h3>
+                  <p className={`mt-2 text-sm ${textClass}`}>{option.description}</p>
+                  <div className="mt-4">
+                    <Link
+                      href={option.href}
+                      className="text-gannetGreen hover:text-gannetGreen/80 font-medium text-sm"
+                      target={option.href.startsWith('http') || option.href.startsWith('mailto') ? '_blank' : undefined}
+                      rel={option.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    >
+                      {option.cta} →
+                    </Link>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
 
         {/* Contact Info */}
