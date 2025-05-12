@@ -52,6 +52,10 @@ const resources = [
 ];
 
 export default function Resources() {
+  // Temporarily hide the Resources section
+  return null;
+  
+  /* Commented out for future restoration
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
@@ -138,4 +142,5 @@ export default function Resources() {
       </div>
     </section>
   );
+  */
 } 
