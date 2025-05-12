@@ -60,7 +60,7 @@ export default function Testimonials() {
       text: "DFS offers invaluable information when data is overwhelming and time in short supply, like in most emergency situation. DFS Situation Hub is a perfect example of how AI can support life-saving interventions, allowing to make timely decisions at critical times – in short, this is AI done right!",
       name: "Frédéric Fessard",
       role: "Program Development Manager",
-      organization: "Fin Church Air (FCA)",
+      organization: "Fin Church Aid (FCA)",
     },
     {
       id: 2,
