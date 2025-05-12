@@ -1,61 +1,69 @@
 "use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+// Imports intentionally commented out for future restoration
+// import Image from 'next/image';
+// import Link from 'next/link';
+// import { motion } from 'framer-motion';
+// import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-icons/fi';
+// import { useTheme } from '@/components/ui/ThemeContext';
 import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-icons/fi';
-import { useTheme } from '@/components/ui/ThemeContext';
 
-const resources = [
-  {
-    name: 'Documentation',
-    description: 'Comprehensive guides to help you understand and use our humanitarian tools effectively.',
-    icon: FiBookOpen,
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/documentation',
-  },
-  {
-    name: 'API Reference',
-    description: 'Detailed API documentation for technical teams to integrate GANNET with existing systems. (coming soon)',
-    icon: FiFileText,
-    image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/api-reference',
-  },
-  {
-    name: 'Video Tutorials',
-    description: 'Step-by-step video guides to help field teams get up and running quickly.',
-    icon: FiVideo,
-    image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/tutorials',
-  },
-  {
-    name: 'Humanitarian Use Cases',
-    description: 'Real-world examples of how GANNET tools are transforming crisis response.',
-    icon: FiCpu,
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/humanitarian-use-cases',
-  },
-  {
-    name: 'Implementation Guides',
-    description: "Learn how to maximize your organization's impact with our products.",
-    icon: FiBox,
-    image: 'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/implementation-guides',
-  },
-  {
-    name: 'Partner Network',
-    description: 'Connect with other humanitarian organizations to share ideas and best practices.',
-    icon: FiUsers,
-    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
-    href: '/resources/partner-network',
-  },
-];
-
+// Resource data moved inside commented code to avoid unused variable error
 export default function Resources() {
   // Temporarily hide the Resources section
   return null;
   
   /* Commented out for future restoration
+  import Image from 'next/image';
+  import Link from 'next/link';
+  import { motion } from 'framer-motion';
+  import { useTheme } from '@/components/ui/ThemeContext';
+
+  const resources = [
+    {
+      name: 'Documentation',
+      description: 'Comprehensive guides to help you understand and use our humanitarian tools effectively.',
+      icon: FiBookOpen,
+      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
+      href: '/resources/documentation',
+    },
+    {
+      name: 'API Reference',
+      description: 'Detailed API documentation for technical teams to integrate GANNET with existing systems. (coming soon)',
+      icon: FiFileText,
+      image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
+      href: '/resources/api-reference',
+    },
+    {
+      name: 'Video Tutorials',
+      description: 'Step-by-step video guides to help field teams get up and running quickly.',
+      icon: FiVideo,
+      image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
+      href: '/resources/tutorials',
+    },
+    {
+      name: 'Humanitarian Use Cases',
+      description: 'Real-world examples of how GANNET tools are transforming crisis response.',
+      icon: FiCpu,
+      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
+      href: '/resources/humanitarian-use-cases',
+    },
+    {
+      name: 'Implementation Guides',
+      description: "Learn how to maximize your organization's impact with our products.",
+      icon: FiBox,
+      image: 'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
+      href: '/resources/implementation-guides',
+    },
+    {
+      name: 'Partner Network',
+      description: 'Connect with other humanitarian organizations to share ideas and best practices.',
+      icon: FiUsers,
+      image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
+      href: '/resources/partner-network',
+    },
+  ];
+
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
