@@ -1,14 +1,6 @@
 "use client";
 
-// Imports intentionally commented out for future restoration
-// import Image from 'next/image';
-// import Link from 'next/link';
-// import { motion } from 'framer-motion';
-// import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-icons/fi';
-// import { useTheme } from '@/components/ui/ThemeContext';
-import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-icons/fi';
-
-// Resource data moved inside commented code to avoid unused variable error
+// All imports and code moved inside comment block to avoid unused variable errors
 export default function Resources() {
   // Temporarily hide the Resources section
   return null;
@@ -17,6 +9,7 @@ export default function Resources() {
   import Image from 'next/image';
   import Link from 'next/link';
   import { motion } from 'framer-motion';
+  import { FiBookOpen, FiFileText, FiVideo, FiCpu, FiBox, FiUsers } from 'react-icons/fi';
   import { useTheme } from '@/components/ui/ThemeContext';
 
   const resources = [
