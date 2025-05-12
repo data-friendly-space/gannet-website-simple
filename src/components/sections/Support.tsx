@@ -12,6 +12,7 @@ const supportOptions = [
     icon: FiMail,
     href: 'mailto:support@gannet.ai?subject=GANNET%20Support%20Request&body=Hello%20GANNET%20Team%2C%0A%0AI%20have%20a%20question%20about%3A%0A%0A%0AThanks%2C%0A',
     cta: 'Send Email',
+    visible: true,
   },
   {
     name: 'Join our Slack Channel',
@@ -19,6 +20,7 @@ const supportOptions = [
     icon: FiMessageSquare,
     href: 'https://join.slack.com/share/enQtODcxNDgxNTk5NDM4NS04YmExYjYxZWRkYjBmNzI3MDg1YWU0YWZmNzBmMmE1NzJlM2ZmM2E2ODllZTg5NjUyNzNlZDM4MGZhMWM2YjE1',
     cta: 'Join Community',
+    visible: true,
   },
   {
     name: 'Help Center',
@@ -26,6 +28,7 @@ const supportOptions = [
     icon: FiHelpCircle,
     href: '/resources',
     cta: 'Browse Resources',
+    visible: false,
   },
   {
     name: 'Submit a Ticket',
@@ -33,6 +36,7 @@ const supportOptions = [
     icon: FiFileText,
     href: '/support/create-ticket',
     cta: 'Open Ticket',
+    visible: false,
   },
 ];
 
@@ -60,7 +64,7 @@ export default function Support() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {supportOptions.map((option, index) => {
+          {supportOptions.filter(option => option.visible !== false).map((option, index) => {
             const Icon = option.icon;
             return (
               <motion.div
