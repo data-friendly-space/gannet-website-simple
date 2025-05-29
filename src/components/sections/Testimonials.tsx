@@ -87,7 +87,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className={`py-24 ${bgClass} relative`}>
+    <section className={`pt-12 pb-24 ${bgClass} relative`}>
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -left-20 top-1/4 w-40 h-40 bg-gannetBlue/10 rounded-full blur-3xl" />
