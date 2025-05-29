@@ -160,14 +160,6 @@ export default function Navbar() {
             >
               Fuel Our Mission
             </Link>
-            <Link 
-              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
-              className="bg-gannetGreen hover:bg-gannetGreen/90 text-gannetDarkBg px-3 py-2 lg:px-4 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a Demo
-            </Link>
             <ThemeToggle />
           </div>
 
@@ -263,15 +255,6 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                 >
                   Fuel Our Mission
-                </Link>
-                <Link 
-                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj" 
-                  className="w-full block bg-gannetGreen hover:bg-gannetGreen/90 text-gannetDarkBg px-4 py-2 rounded-lg text-base font-medium text-center"
-                  onClick={() => setIsOpen(false)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book a Demo
                 </Link>
               </div>
             </div>
