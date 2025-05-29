@@ -2,12 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { FiTwitter, FiLinkedin } from 'react-icons/fi';
+import { FiTwitter, FiLinkedin, FiYoutube } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 const socialLinks = [
   { name: 'Twitter', icon: FiTwitter, href: 'https://x.com/DFS_org' },
   { name: 'LinkedIn', icon: FiLinkedin, href: 'https://www.linkedin.com/company/data-friendly-space/' },
+  { name: 'YouTube', icon: FiYoutube, href: 'https://www.youtube.com/@GannetAI' },
 ];
 
 export default function Footer() {
