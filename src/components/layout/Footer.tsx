@@ -24,36 +24,64 @@ export default function Footer() {
   return (
     <footer className={bgClass}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div>
-          <Link href="/" className="flex items-center">
-            <Image
-              src={isDark ? "/images/GANNET_Logo_Green.png" : "/images/GANNET_Logo_Green_Dark.png"}
-              alt="GANNET Logo"
-              width={180}
-              height={60}
-              className="h-12 w-auto"
-              priority
-            />
-          </Link>
-          <p className={`mt-4 ${textClass} text-sm max-w-xl text-left`}>
-            AI for humanitarians, by humanitarians
-          </p>
-          <div className="mt-6 flex space-x-4">
-            {socialLinks.map((link) => {
-              const Icon = link.icon;
-              return (
-                <a 
-                  key={link.name}
-                  href={link.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={`${socialIconClass} ${hoverClass} transition-colors`}
-                  aria-label={link.name}
-                >
-                  <Icon className="h-5 w-5" />
-                </a>
-              );
-            })}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* GANNET Section */}
+          <div>
+            <Link href="/" className="flex items-center">
+              <Image
+                src={isDark ? "/images/GANNET_Logo_Green.png" : "/images/GANNET_Logo_Green_Dark.png"}
+                alt="GANNET Logo"
+                width={180}
+                height={60}
+                className="h-12 w-auto"
+                priority
+              />
+            </Link>
+            <p className={`mt-4 ${textClass} text-sm max-w-xl text-left`}>
+              AI for humanitarians, by humanitarians
+            </p>
+            <div className="mt-6 flex space-x-4">
+              {socialLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <a 
+                    key={link.name}
+                    href={link.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={`${socialIconClass} ${hoverClass} transition-colors`}
+                    aria-label={link.name}
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Data Friendly Space Section */}
+          <div className="flex flex-col justify-center">
+            <div className="text-center md:text-right">
+              <span className={`${textClass} text-sm block mb-3`}>Created by</span>
+              <a 
+                href="https://www.datafriendlyspace.org/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Data Friendly Space"
+                className="inline-block"
+              >
+                <Image
+                  src="/images/dfs-logo.svg"
+                  alt="Data Friendly Space Logo"
+                  width={150}
+                  height={45}
+                  className={`h-12 w-auto ${isDark ? 'brightness-0 invert' : ''}`}
+                />
+              </a>
+              <p className={`mt-3 ${textClass} text-sm max-w-md text-center md:text-right md:ml-auto`}>
+                DFS provides digital tools and actionable data for social impact organisations to just get things done.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -71,23 +99,6 @@ export default function Footer() {
                   Terms of Use
                 </Link>
               </div>
-            </div>
-            <div className="flex items-center mt-4 md:mt-0">
-              <span className={`${textClass} text-sm mr-3`}>Created by</span>
-              <a 
-                href="https://www.datafriendlyspace.org/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Data Friendly Space"
-              >
-                <Image
-                  src="/images/dfs-logo.svg"
-                  alt="Data Friendly Space Logo"
-                  width={100}
-                  height={30}
-                  className={`h-8 w-auto ${isDark ? 'brightness-0 invert' : ''}`}
-                />
-              </a>
             </div>
           </div>
         </div>
