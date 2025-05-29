@@ -119,7 +119,7 @@ export default function Hero() {
                 <div className="p-3 bg-gannetBlue rounded-lg">
                   <FiMap className="h-6 w-6 text-gannetDarkBg" />
                 </div>
-                <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>Situation Hubs</h2>
+                <h2 className={`ml-4 text-2xl font-bold ${headingClass}`}>SituationHub</h2>
               </div>
               <p className={`${textClass} mb-4`}>
               GANNET SituationHub transforms real-time data into structured, automated situation analysis reports with human oversight. By combining GANNET&apos;s capabilities with DFS&apos;s humanitarian analysis expertise, SituationHub offers regular situational analysis and media monitoring, following established humanitarian frameworks.
@@ -139,47 +139,36 @@ export default function Hero() {
                 </div>
               </div>
               <div className="space-y-4 mt-auto">
-                <p className={`text-gannetBlue font-medium text-center`}>
-                  Explore the crises we are monitoring
-                </p>
                 <div className="flex flex-col md:flex-row justify-center gap-6">
                   <Link
                     href="https://analysis.gannet.ai/lebanon"
-                    className={`group relative flex flex-col items-center justify-center px-8 py-1 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    className={`group relative flex items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className={`${tagText} font-semibold text-lg`}>Lebanon</span>
-                    <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
                   </Link>
                   <Link
                     href="https://analysis.gannet.ai/sudan"
-                    className={`group relative flex flex-col items-center justify-center px-8 py-1 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    className={`group relative flex items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className={`${tagText} font-semibold text-lg`}>Sudan</span>
-                    <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
                   </Link>
                   <Link
                     href="https://analysis.gannet.ai/myanmar"
-                    className={`group relative flex flex-col items-center justify-center px-8 py-1 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
+                    className={`group relative flex items-center justify-center px-8 py-3 ${tagBg} rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md ${tagHover} flex-1 md:max-w-[240px]`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className={`${tagText} font-semibold text-lg`}>Myanmar</span>
-                    <span className={`text-sm ${textClass} text-center opacity-0 group-hover:opacity-100 transition-opacity`}>View Analysis</span>
                   </Link>
                 </div>
                 <div className={`text-center mt-4`}>
                   <p className={`text-sm ${textClass} italic`}>
                     Select a region to access the latest humanitarian insights and analysis
                   </p>
-                  <div className="flex items-center justify-center mt-2 text-gannetBlue">
-                    <span className="animate-pulse">●</span>
-                    <span className="mx-1 animate-pulse" style={{ animationDelay: '0.2s' }}>●</span>
-                    <span className="animate-pulse" style={{ animationDelay: '0.4s' }}>●</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -207,7 +196,7 @@ export default function Hero() {
                 ))}
               </div>
               <div className={textClass}>
-                <span className={`font-semibold ${isDark ? 'text-gannetTextLight' : 'text-gray-900'}`}>500+</span> Humanitarian Decision-Makers
+                <span className={`font-semibold ${isDark ? 'text-gannetTextLight' : 'text-gray-900'}`}>500+</span> Humanitarian
               </div>
             </div>
             
