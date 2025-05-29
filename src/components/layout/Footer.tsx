@@ -35,7 +35,7 @@ export default function Footer() {
             />
           </Link>
           <p className={`mt-4 ${textClass} text-sm max-w-xl text-left`}>
-            AI-powered humanitarian tools for effective crisis response. Transform complex data into actionable insights and enhance your organization&apos;s impact.
+            AI for humanitarians, by humanitarians
           </p>
           <div className="mt-6 flex space-x-4">
             {socialLinks.map((link) => {
