@@ -9,7 +9,6 @@ import { useTheme } from '@/components/ui/ThemeContext';
 import Image from 'next/image';
 
 const navLinks = [
-  { name: 'Home', href: '/' },
   { name: 'Capabilities', href: '/#capabilities' },
   // { name: 'Resources', href: '/#resources' },
   { name: 'Support', href: '/#support' },
@@ -111,7 +110,7 @@ export default function Navbar() {
                     onClick={() => setShowHubsDropdown(!showHubsDropdown)}
                   >
                     <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-1.5 text-xs">HUBS</span>
-                    Situation Hubs
+                    SituationHub
                     <FiChevronDown className="ml-1 h-4 w-4" />
                   </button>
                   
@@ -153,7 +152,6 @@ export default function Navbar() {
 
           {/* CTA Button and Theme Toggle */}
           <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
-            <ThemeToggle />
             <Link 
               href="https://givebutter.com/gannet" 
               className="bg-gannetBlue hover:bg-gannetBlue/90 text-white px-3 py-2 lg:px-4 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
@@ -170,6 +168,7 @@ export default function Navbar() {
             >
               Book a Demo
             </Link>
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu button and Theme Toggle */}
@@ -219,7 +218,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center">
                       <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-xs">HUBS</span>
-                      Situation Hubs
+                      SituationHub
                     </div>
                     <FiChevronDown className={`h-4 w-4 transition-transform ${showMobileHubs ? 'rotate-180' : ''}`} />
                   </button>
