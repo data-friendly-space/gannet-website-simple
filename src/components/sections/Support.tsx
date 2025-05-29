@@ -10,7 +10,7 @@ const supportOptions = [
     name: 'Email Support',
     description: 'Reach out to our team for assistance with implementation, technical issues, or general inquiries about GANNET.',
     icon: FiMail,
-    href: 'mailto:support@gannet.ai?subject=GANNET%20Support%20Request&body=Hello%20GANNET%20Team%2C%0A%0AI%20have%20a%20question%20about%3A%0A%0A%0AThanks%2C%0A',
+    href: 'mailto:info@gannet.ai?subject=GANNET%20Support%20Request&body=Hello%20GANNET%20Team%2C%0A%0AI%20have%20a%20question%20about%3A%0A%0A%0AThanks%2C%0A',
     cta: 'Send Email',
     visible: true,
   },
@@ -112,19 +112,15 @@ export default function Support() {
                 Have a specific question or need personalized support? Reach out to our team directly via email.
               </p>
               
-              <div className="mt-8 inline-flex items-center justify-center bg-white/20 px-6 py-4 rounded-lg">
-                <FiMail className="h-6 w-6 text-gannetDarkBg/80" />
-                <span className="ml-3 text-gannetDarkBg/90 font-medium">support@gannet.ai</span>
-              </div>
-              
               <div className="mt-8">
                 <Link
-                  href="mailto:support@gannet.ai?subject=GANNET%20Support%20Request&body=Hello%20GANNET%20Team%2C%0A%0AI%20have%20a%20question%20about%3A%0A%0A%0AThanks%2C%0A"
+                  href="mailto:info@gannet.ai?subject=GANNET%20Support%20Request&body=Hello%20GANNET%20Team%2C%0A%0AI%20have%20a%20question%20about%3A%0A%0A%0AThanks%2C%0A"
                   className="inline-flex items-center justify-center px-6 py-3 bg-white text-gannetGreen font-bold rounded-lg transition-all duration-300 hover:bg-white/90 shadow-md hover:shadow-lg"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Contact Us</span>
+                  <FiMail className="mr-2 h-5 w-5" />
+                  <span>info@gannet.ai</span>
                   <svg 
                     className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" 
                     fill="none" 
