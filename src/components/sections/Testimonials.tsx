@@ -103,10 +103,10 @@ export default function Testimonials() {
           viewport={{ once: true }}
         >
           <h2 className={`text-3xl md:text-4xl font-bold ${headingClass}`}>
-            What Our Partners Say
+            From Our Humanitarian Community
           </h2>
           <p className={`mt-4 text-lg ${subtitleClass} max-w-3xl mx-auto`}>
-            See how GANNET is helping humanitarian organizations worldwide transform their operations and enhance their impact.
+            Understand how GANNET supports humanitarians worldwide enhance their impact
           </p>
         </motion.div>
         
