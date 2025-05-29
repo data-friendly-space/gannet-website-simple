@@ -174,44 +174,6 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Trust indicators */}
-          <motion.div 
-            className="mt-10 flex flex-col items-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <div className="flex items-center justify-center gap-x-6 mb-4">
-              <div className="flex -space-x-2">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className={`inline-block h-8 w-8 rounded-full border-2 border-${cardBg} overflow-hidden ${isDark ? 'bg-gray-800' : 'bg-gray-100'}`}>
-                    <Image
-                      src={`https://randomuser.me/api/portraits/men/${30 + i}.jpg`}
-                      alt="User avatar"
-                      width={32}
-                      height={32}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className={textClass}>
-                <span className={`font-semibold ${isDark ? 'text-gannetTextLight' : 'text-gray-900'}`}>500+</span> Humanitarian
-              </div>
-            </div>
-            
-            <Link
-              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj"
-              className={`${textClass} hover:text-gannetGreen flex items-center gap-1 font-medium`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Need a personalized demo? Book a call
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </Link>
-          </motion.div>
         </div>
       </div>
     </section>
