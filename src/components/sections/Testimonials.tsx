@@ -46,6 +46,7 @@ export default function Testimonials() {
   // Style classes based on theme
   const bgClass = isDark ? 'bg-gannetDarkBg' : 'bg-white';
   const headingClass = isDark ? 'text-gannetTextLight' : 'text-gray-900';
+  const subheadingClass = isDark ? 'text-gannetGreen' : 'text-green-600';
   const subtitleClass = isDark ? 'text-gray-400' : 'text-gray-600';
   const cardBg = isDark ? 'bg-gannetCardBg' : 'bg-white';
   const cardBorder = isDark ? 'border-gannetCardBg/60' : 'border-gray-200';
@@ -102,9 +103,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className={`text-3xl md:text-4xl font-bold ${headingClass}`}>
+          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Testimonials</h2>
+          <p className={`mt-2 text-3xl md:text-4xl font-bold ${headingClass}`}>
             From Our Humanitarian Community
-          </h2>
+          </p>
           <p className={`mt-4 text-lg ${subtitleClass} max-w-3xl mx-auto`}>
             Understand how GANNET supports humanitarians worldwide enhance their impact
           </p>
