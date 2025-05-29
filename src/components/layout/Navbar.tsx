@@ -89,27 +89,27 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-6">
+            <div className="ml-10 flex items-center space-x-8">
               {/* Product Links */}
-              <div className="flex space-x-4 mr-4">
+              <div className="flex space-x-6 mr-6">
                 <Link
                   href="https://app.gannet.ai/sign-in"
-                  className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-sm font-medium transition-colors`}
+                  className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-body-small font-medium transition-colors`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-1.5 text-xs">AI</span>
+                  <span className="px-2 py-1 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-caption font-semibold">AI</span>
                   Virtual Assistant
                 </Link>
                 
                 <div className="relative">
                   <button
-                    className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-sm font-medium transition-colors`}
+                    className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-body-small font-medium transition-colors`}
                     onMouseEnter={() => setShowHubsDropdown(true)}
                     onMouseLeave={() => setShowHubsDropdown(false)}
                     onClick={() => setShowHubsDropdown(!showHubsDropdown)}
                   >
-                    <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-1.5 text-xs">HUBS</span>
+                    <span className="px-2 py-1 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-caption font-semibold">HUBS</span>
                     SituationHub
                     <FiChevronDown className="ml-1 h-4 w-4" />
                   </button>
@@ -117,7 +117,7 @@ export default function Navbar() {
                   {/* Dropdown Menu */}
                   {showHubsDropdown && (
                     <div 
-                      className={`absolute left-0 mt-1 w-48 rounded-md ${dropdownBg} py-1 shadow-lg ring-1 ring-black/10 ring-opacity-5 focus:outline-none z-50`}
+                      className={`absolute left-0 mt-1 w-48 rounded-lg ${dropdownBg} py-2 shadow-lg ring-1 ring-black/10 ring-opacity-5 focus:outline-none z-50`}
                       onMouseEnter={() => setShowHubsDropdown(true)}
                       onMouseLeave={() => setShowHubsDropdown(false)}
                     >
@@ -125,7 +125,7 @@ export default function Navbar() {
                         <Link
                           key={hub.name}
                           href={hub.href}
-                          className={`block px-4 py-2 text-sm ${textClass} hover:bg-gray-100/50`}
+                          className={`block px-4 py-3 text-body-small ${textClass} hover:bg-gray-100/50 transition-colors`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -142,7 +142,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`${textClass} hover:text-gannetBlue px-3 py-2 text-sm font-medium transition-colors`}
+                  className={`${textClass} hover:text-gannetBlue px-3 py-2 text-body-small font-medium transition-colors`}
                 >
                   {link.name}
                 </Link>
@@ -151,10 +151,10 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button and Theme Toggle */}
-          <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             <Link 
               href="https://givebutter.com/gannet" 
-              className="bg-gannetBlue hover:bg-gannetBlue/90 text-white px-3 py-2 lg:px-4 rounded-lg text-sm font-medium transition-colors whitespace-nowrap"
+              className="bg-gannetBlue hover:bg-gannetBlue/90 text-white px-4 py-2.5 lg:px-5 rounded-lg text-body-small font-semibold transition-all duration-300 whitespace-nowrap"
               target="_blank"
               rel="noopener noreferrer"
             >

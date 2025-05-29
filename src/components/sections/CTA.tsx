@@ -17,14 +17,14 @@ export default function CTA() {
   const buttonTextColor = isDark ? 'text-gannetDarkBg' : 'text-green-600';
   
   return (
-    <section className={`relative py-24 bg-gradient-to-br ${bgGradient}`}>
+    <section className={`relative section-padding bg-gradient-to-br ${bgGradient}`}>
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute right-0 top-0 w-1/3 h-1/3 bg-white/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
         <div className="absolute left-0 bottom-0 w-1/4 h-1/4 bg-white/10 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3" />
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto container-padding">
         <motion.div 
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -32,17 +32,17 @@ export default function CTA() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className={`text-3xl md:text-4xl font-bold ${textColor}`}>
+          <h2 className={`heading-section ${textColor} mb-6`}>
             Ready to transform humanitarian response?
           </h2>
-          <p className={`mt-4 text-xl ${subtextColor} max-w-2xl mx-auto`}>
+          <p className={`section-subtitle ${subtextColor}`}>
             Experience the power of GANNET technology. Request a demo today or learn more about our sponsorship options.
           </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+          <div className="mt-12 flex flex-col sm:flex-row justify-center gap-6">
             <Link
               href="https://app.gannet.ai/sign-in"
-              className={`rounded-lg bg-white px-8 py-4 text-center text-base font-medium ${buttonTextColor} shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600`}
+              className={`rounded-lg bg-white px-8 py-4 text-center text-body font-semibold ${buttonTextColor} shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,7 +50,7 @@ export default function CTA() {
             </Link>
             <Link
               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj"
-              className={`rounded-lg bg-gannetGreen px-8 py-4 text-center text-base font-medium ${textColor} shadow-lg ring-1 ring-white/20 hover:bg-gannetGreen/90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gannetGreen`}
+              className={`rounded-lg bg-gannetGreen px-8 py-4 text-center text-body font-semibold ${textColor} shadow-lg ring-1 ring-white/20 hover:bg-gannetGreen/90 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gannetGreen`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,7 +58,7 @@ export default function CTA() {
             </Link>
           </div>
 
-          <p className={`mt-8 text-sm ${subtextColor}`}>
+          <p className={`mt-10 text-body-small ${subtextColor}`}>
             No commitment required. Customized to your humanitarian needs.
           </p>
         </motion.div>

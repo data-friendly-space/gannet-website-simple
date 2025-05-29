@@ -25,7 +25,7 @@ export default function Hero() {
   const tagHover = isDark ? 'hover:bg-gannetBlue/30' : 'hover:bg-blue-100';
 
   return (
-    <section className={`relative pt-16 md:pt-20 pb-12 overflow-hidden ${bgClass}`}>
+    <section className={`relative section-padding overflow-hidden ${bgClass}`}>
       {/* Background gradient and decorative elements */}
       <div className={`absolute inset-0 bg-gradient-to-br ${gradientBg} -z-10`} />
       
@@ -33,48 +33,48 @@ export default function Hero() {
       <div className="absolute top-16 right-0 w-1/3 h-1/3 bg-gradient-to-br from-gannetBlue/10 to-gannetAccent.purple/10 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-gannetGreen/10 to-gannetAccent.blue/10 rounded-full blur-3xl -z-10" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
+      <div className="max-w-7xl mx-auto container-padding">
         {/* Main hero content */}
         <motion.div 
-          className="text-center mb-8 md:mb-12"
+          className="text-center mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight ${headingClass} mb-4`}>
+          <h1 className={`heading-hero ${headingClass} mb-6`}>
             <span className="block">Humanitarian Intelligence</span>
-            <span className="block bg-gradient-to-r from-gannetGreen to-gannetLightGreen bg-clip-text text-transparent">
+            <span className="block gannet-gradient">
               Powered by AI
             </span>
           </h1>
           
-          <p className={`text-base md:text-lg ${textClass} max-w-3xl mx-auto`}>
+          <p className={`section-subtitle ${textClass}`}>
             GANNET&apos;s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes in humanitarian response.
           </p>
         </motion.div>
 
         {/* Visual products showcase */}
         <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-8"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {/* Virtual Assistant - More compact */}
-          <div className={`${cardBg} rounded-xl shadow-lg p-4 md:p-6 border-2 border-transparent hover:border-gannetGreen transition-all`}>
-            <div className="flex items-center mb-3">
-              <div className="p-2 bg-gannetGreen rounded-lg">
-                <FiMessageSquare className="h-5 w-5 text-gannetDarkBg" />
+          {/* Virtual Assistant */}
+          <div className={`${cardBg} rounded-xl shadow-lg card-padding border-2 border-transparent hover:border-gannetGreen transition-all duration-300 hover:shadow-xl`}>
+            <div className="flex items-center mb-4">
+              <div className="p-3 bg-gannetGreen rounded-lg">
+                <FiMessageSquare className="h-6 w-6 text-gannetDarkBg" />
               </div>
-              <h2 className={`ml-3 text-xl md:text-2xl font-bold ${headingClass}`}>Virtual Assistant</h2>
+              <h2 className={`ml-4 heading-card ${headingClass}`}>Virtual Assistant</h2>
             </div>
             
-            <p className={`${textClass} text-sm md:text-base mb-4`}>
+            <p className={`text-body ${textClass} mb-6`}>
               Ask questions in any language and get clear answers supported by relevant documents.
             </p>
             
-            {/* Video preview - smaller and more prominent */}
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-md mb-4">
+            {/* Video preview */}
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-md mb-6">
               <video
                 className="w-full h-full object-cover"
                 autoPlay
@@ -89,7 +89,7 @@ export default function Hero() {
             
             <Link
               href="https://app.gannet.ai/sign-in"
-              className="group flex items-center justify-center px-6 py-2.5 bg-gannetGreen text-gannetDarkBg font-bold rounded-lg transition-all duration-300 hover:bg-gannetGreen/90 hover:scale-105 shadow-md hover:shadow-lg w-full text-sm md:text-base"
+              className="btn-cta flex items-center justify-center w-full"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -111,21 +111,21 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Situation Hubs - More compact */}
-          <div className={`${cardBg} rounded-xl shadow-lg p-4 md:p-6 border-2 border-transparent hover:border-gannetBlue transition-all`}>
-            <div className="flex items-center mb-3">
-              <div className="p-2 bg-gannetBlue rounded-lg">
-                <FiMap className="h-5 w-5 text-gannetDarkBg" />
+          {/* Situation Hubs */}
+          <div className={`${cardBg} rounded-xl shadow-lg card-padding border-2 border-transparent hover:border-gannetBlue transition-all duration-300 hover:shadow-xl`}>
+            <div className="flex items-center mb-4">
+              <div className="p-3 bg-gannetBlue rounded-lg">
+                <FiMap className="h-6 w-6 text-white" />
               </div>
-              <h2 className={`ml-3 text-xl md:text-2xl font-bold ${headingClass}`}>SituationHub</h2>
+              <h2 className={`ml-4 heading-card ${headingClass}`}>SituationHub</h2>
             </div>
             
-            <p className={`${textClass} text-sm md:text-base mb-4`}>
+            <p className={`text-body ${textClass} mb-6`}>
               Real-time data transformed into structured situation analysis reports with human oversight.
             </p>
             
-            {/* Video preview - smaller and more prominent */}
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-md mb-4">
+            {/* Video preview */}
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-md mb-6">
               <video
                 className="w-full h-full object-cover"
                 autoPlay
@@ -138,11 +138,11 @@ export default function Hero() {
               </video>
             </div>
             
-            {/* Region links - more compact */}
-            <div className="grid grid-cols-3 gap-2 mb-2">
+            {/* Region links */}
+            <div className="grid grid-cols-3 gap-3 mb-3">
               <Link
                 href="https://analysis.gannet.ai/lebanon"
-                className={`${tagBg} ${tagText} ${tagHover} px-3 py-2 rounded-lg text-center text-xs md:text-sm font-semibold transition-all duration-300 hover:scale-105`}
+                className={`${tagBg} ${tagText} ${tagHover} px-4 py-3 rounded-lg text-center text-body-small font-semibold transition-all duration-300 hover:scale-105`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -150,7 +150,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="https://analysis.gannet.ai/sudan"
-                className={`${tagBg} ${tagText} ${tagHover} px-3 py-2 rounded-lg text-center text-xs md:text-sm font-semibold transition-all duration-300 hover:scale-105`}
+                className={`${tagBg} ${tagText} ${tagHover} px-4 py-3 rounded-lg text-center text-body-small font-semibold transition-all duration-300 hover:scale-105`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -158,14 +158,14 @@ export default function Hero() {
               </Link>
               <Link
                 href="https://analysis.gannet.ai/myanmar"
-                className={`${tagBg} ${tagText} ${tagHover} px-3 py-2 rounded-lg text-center text-xs md:text-sm font-semibold transition-all duration-300 hover:scale-105`}
+                className={`${tagBg} ${tagText} ${tagHover} px-4 py-3 rounded-lg text-center text-body-small font-semibold transition-all duration-300 hover:scale-105`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Myanmar
               </Link>
             </div>
-            <p className={`text-xs ${textClass} text-center italic`}>
+            <p className={`text-caption ${textClass} text-center italic`}>
               Select a region for latest humanitarian insights
             </p>
           </div>
@@ -178,10 +178,10 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj"
-              className="group flex items-center justify-center px-6 py-3 bg-gannetBlue text-white font-bold rounded-lg transition-all duration-300 hover:bg-gannetBlue/90 hover:scale-105 shadow-md hover:shadow-lg"
+              className="btn-cta-secondary flex items-center"
               target="_blank"
               rel="noopener noreferrer"
             >

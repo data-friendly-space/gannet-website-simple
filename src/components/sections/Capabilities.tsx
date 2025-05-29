@@ -68,14 +68,14 @@ export default function Capabilities() {
   const cardHoverBorderClass = isDark ? 'hover:ring-gannetGreen' : 'hover:ring-green-500';
 
   return (
-    <section id="capabilities" className={`py-20 ${bgClass}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="capabilities" className={`section-padding ${bgClass}`}>
+      <div className="max-w-7xl mx-auto container-padding">
         <div className="text-center mb-16">
-          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Capabilities</h2>
-          <p className={`mt-2 text-3xl font-bold ${headingClass} sm:text-4xl`}>
+          <h2 className={`section-eyebrow ${subheadingClass}`}>Capabilities</h2>
+          <p className={`mt-4 heading-section ${headingClass}`}>
             Comprehensive capabilities for humanitarian organizations
           </p>
-          <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
+          <p className={`mt-6 section-subtitle ${textClass}`}>
             Our cutting-edge platform offers a range of powerful capabilities designed specifically for humanitarian contexts.
           </p>
         </div>
@@ -93,12 +93,12 @@ export default function Capabilities() {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <div className={`h-full flex flex-col rounded-2xl ${cardBgClass} p-8 shadow-md ring-1 ${cardBorderClass} transition-all duration-300 hover:shadow-xl ${cardHoverBorderClass} hover:-translate-y-1`}>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gannetGreen text-gannetDarkBg">
+                <div className={`h-full flex flex-col rounded-2xl ${cardBgClass} card-padding shadow-md ring-1 ${cardBorderClass} transition-all duration-300 hover:shadow-xl ${cardHoverBorderClass} hover:-translate-y-1`}>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gannetGreen text-gannetDarkBg mb-6">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h3 className={`mt-6 text-lg font-medium ${headingClass}`}>{capability.name}</h3>
-                  <p className={`mt-2 text-base ${textClass}`}>{capability.description}</p>
+                  <h3 className={`heading-subsection ${headingClass} mb-3`}>{capability.name}</h3>
+                  <p className={`text-body ${textClass}`}>{capability.description}</p>
                 </div>
               </motion.div>
             );

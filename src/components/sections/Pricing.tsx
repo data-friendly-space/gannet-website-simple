@@ -97,14 +97,14 @@ export default function Pricing() {
   const sponsoredBgClass = isDark ? 'bg-gannetCardBg' : 'bg-gray-50';
 
   return (
-    <section id="pricing" className={`py-20 ${bgClass}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" className={`section-padding ${bgClass}`}>
+      <div className="max-w-7xl mx-auto container-padding">
         <div className="text-center mb-16">
-          <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Pricing</h2>
-          <p className={`mt-2 text-3xl font-bold ${headingClass} sm:text-4xl`}>
+          <h2 className={`section-eyebrow ${subheadingClass}`}>Pricing</h2>
+          <p className={`mt-4 heading-section ${headingClass}`}>
             Choose the perfect plan for your organization
           </p>
-          <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
+          <p className={`mt-6 section-subtitle ${textClass}`}>
             No hidden fees, flexible sponsorship options available.
           </p>
           
@@ -115,7 +115,7 @@ export default function Pricing() {
                 type="button"
                 className={`${
                   !annual ? toggleActiveClass : toggleInactiveClass
-                } relative py-2 px-6 border-transparent rounded-full text-sm font-medium whitespace-nowrap focus:outline-none focus:z-10 transition-colors`}
+                } relative py-3 px-6 border-transparent rounded-full text-body-small font-medium whitespace-nowrap focus:outline-none focus:z-10 transition-colors`}
                 onClick={() => setAnnual(false)}
               >
                 Monthly
@@ -124,10 +124,10 @@ export default function Pricing() {
                 type="button"
                 className={`${
                   annual ? toggleActiveClass : toggleInactiveClass
-                } ml-0.5 relative py-2 px-6 border-transparent rounded-full text-sm font-medium whitespace-nowrap focus:outline-none focus:z-10 transition-colors`}
+                } ml-0.5 relative py-3 px-6 border-transparent rounded-full text-body-small font-medium whitespace-nowrap focus:outline-none focus:z-10 transition-colors`}
                 onClick={() => setAnnual(true)}
               >
-                Annually <span className="text-gannetGreen font-medium">Save 15%</span>
+                Annually <span className="text-gannetGreen font-semibold">Save 15%</span>
               </button>
             </div>
           </div>
@@ -148,32 +148,32 @@ export default function Pricing() {
               }`}
             >
               {tier.highlighted && (
-                <div className="absolute top-0 right-0 left-0 bg-gannetGreen py-1.5 text-center">
-                  <p className="text-xs font-medium text-gannetDarkBg uppercase tracking-wide">
+                <div className="absolute top-0 right-0 left-0 bg-gannetGreen py-2 text-center">
+                  <p className="text-caption font-semibold text-gannetDarkBg uppercase tracking-wide">
                     Most Popular
                   </p>
                 </div>
               )}
               
-              <div className="p-8 pt-6">
+              <div className="card-padding">
                 <div className={tier.highlighted ? 'pt-4' : ''}>
-                  <h3 className={`text-lg font-semibold ${headingClass}`}>{tier.name}</h3>
-                  <p className="mt-4 flex items-baseline">
-                    <span className={`text-4xl font-bold ${headingClass}`}>
+                  <h3 className={`heading-subsection ${headingClass}`}>{tier.name}</h3>
+                  <p className="mt-6 flex items-baseline">
+                    <span className={`text-5xl font-bold ${headingClass}`}>
                       {annual ? tier.price.annually : tier.price.monthly}
                     </span>
-                    <span className={`ml-1 text-xl font-medium ${textClass}`}>/month</span>
+                    <span className={`ml-2 text-body ${textClass}`}>/month</span>
                   </p>
-                  <p className={`mt-2 text-sm ${textClass}`}>{tier.description}</p>
+                  <p className={`mt-3 text-body ${textClass}`}>{tier.description}</p>
                 </div>
 
                 <ul className="mt-8 space-y-4">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-start">
                       <div className="flex-shrink-0">
-                        <FiCheck className="h-5 w-5 text-gannetGreen" />
+                        <FiCheck className="h-5 w-5 text-gannetGreen mt-0.5" />
                       </div>
-                      <p className={`ml-3 text-sm ${featureTextClass}`}>{feature}</p>
+                      <p className={`ml-3 text-body-small ${featureTextClass}`}>{feature}</p>
                     </li>
                   ))}
                 </ul>
@@ -181,9 +181,9 @@ export default function Pricing() {
                 <div className="mt-8">
                   <Link
                     href={tier.cta.href}
-                    className={`block w-full py-3 px-4 rounded-md text-center text-sm font-medium ${
+                    className={`block w-full py-4 px-4 rounded-lg text-center text-body-small font-semibold transition-all duration-300 ${
                       tier.highlighted
-                        ? 'bg-gannetGreen text-gannetDarkBg hover:bg-gannetGreen/90'
+                        ? 'bg-gannetGreen text-gannetDarkBg hover:bg-gannetGreen/90 hover:scale-105'
                         : isDark
                         ? 'bg-gannetGreen/20 text-gannetGreen hover:bg-gannetGreen/30'
                         : 'bg-green-50 text-gannetGreen hover:bg-green-100'
@@ -197,7 +197,7 @@ export default function Pricing() {
           ))}
         </div>
         
-        <div className={`mt-16 text-center ${sponsoredBgClass} rounded-xl p-10`}>
+        <div className={`mt-16 text-center ${sponsoredBgClass} rounded-xl card-padding`}>
           <h3 className={`text-xl font-medium ${headingClass}`}>Need a sponsored solution?</h3>
           <p className={`mt-2 ${textClass}`}>
             We offer sponsorship options for humanitarian organizations operating in resource-constrained environments.

@@ -23,8 +23,8 @@ export default function Footer() {
 
   return (
     <footer className={bgClass}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto container-padding section-padding-small">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* GANNET Section */}
           <div>
             <Link href="/" className="flex items-center">
@@ -37,10 +37,10 @@ export default function Footer() {
                 priority
               />
             </Link>
-            <p className={`mt-4 ${textClass} text-sm max-w-xl text-left`}>
+            <p className={`mt-6 ${textClass} text-body max-w-xl`}>
               AI for humanitarians, by humanitarians
             </p>
-            <div className="mt-6 flex space-x-4">
+            <div className="mt-8 flex space-x-6">
               {socialLinks.map((link) => {
                 const Icon = link.icon;
                 return (
@@ -49,10 +49,10 @@ export default function Footer() {
                     href={link.href} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className={`${socialIconClass} ${hoverClass} transition-colors`}
+                    className={`${socialIconClass} ${hoverClass} transition-colors hover:scale-110 duration-300`}
                     aria-label={link.name}
                   >
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-6 w-6" />
                   </a>
                 );
               })}
@@ -62,13 +62,13 @@ export default function Footer() {
           {/* Data Friendly Space Section */}
           <div className="flex flex-col justify-center">
             <div className="text-center md:text-right">
-              <span className={`${textClass} text-sm block mb-3`}>Created by</span>
+              <span className={`${textClass} text-body-small block mb-4`}>Created by</span>
               <a 
                 href="https://www.datafriendlyspace.org/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Data Friendly Space"
-                className="inline-block"
+                className="inline-block transition-transform hover:scale-105 duration-300"
               >
                 <Image
                   src="/images/dfs-logo.svg"
@@ -78,24 +78,24 @@ export default function Footer() {
                   className={`h-12 w-auto ${isDark ? 'brightness-0 invert' : ''}`}
                 />
               </a>
-              <p className={`mt-3 ${textClass} text-sm max-w-md text-center md:text-right md:ml-auto`}>
+              <p className={`mt-4 ${textClass} text-body-small max-w-md text-center md:text-right md:ml-auto leading-relaxed`}>
                 DFS provides digital tools and actionable data for social impact organisations to just get things done.
               </p>
             </div>
           </div>
         </div>
 
-        <div className={`mt-12 pt-8 border-t ${borderClass}`}>
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex flex-col md:flex-row items-center">
-              <p className={`${textClass} text-sm`}>
+        <div className={`mt-16 pt-8 border-t ${borderClass}`}>
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0">
+              <p className={`${textClass} text-body-small`}>
                 &copy; {new Date().getFullYear()} GANNET. All rights reserved.
               </p>
-              <div className="flex space-x-6 mt-2 md:mt-0 md:ml-6">
-                <Link href="/privacy" className={`${textClass} ${hoverClass} text-sm transition-colors`}>
+              <div className="flex space-x-8 md:ml-8">
+                <Link href="/privacy" className={`${textClass} ${hoverClass} text-body-small transition-colors font-medium`}>
                   Privacy Policy
                 </Link>
-                <Link href="/terms" className={`${textClass} ${hoverClass} text-sm transition-colors`}>
+                <Link href="/terms" className={`${textClass} ${hoverClass} text-body-small transition-colors font-medium`}>
                   Terms of Use
                 </Link>
               </div>
