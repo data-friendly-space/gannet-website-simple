@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiMap, FiCalendar, FiCheck, FiArrowRight, FiPlus, FiUsers, FiBarChart, FiGlobe, FiEye, FiShield } from 'react-icons/fi';
+import { FiArrowRight, FiPlus } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 export default function SituationHubPage() {

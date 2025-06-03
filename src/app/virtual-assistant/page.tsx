@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiMessageSquare, FiCalendar, FiCheck, FiArrowRight, FiPlus, FiGlobe, FiShield, FiDatabase, FiUsers, FiBarChart } from 'react-icons/fi';
+import { FiMessageSquare, FiCalendar, FiArrowRight, FiPlus, FiShield, FiDatabase, FiUsers, FiBarChart } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 export default function VirtualAssistantPage() {
@@ -121,7 +121,7 @@ export default function VirtualAssistantPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                The analysis staff you didn't know you had
+                The analysis staff you didn&apos;t know you had
               </motion.p>
               
               <motion.p 
@@ -130,7 +130,7 @@ export default function VirtualAssistantPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.15 }}
               >
-                Transform complex humanitarian data into actionable insights with GANNET's AI-powered Virtual Assistant. Available 24/7, it enables faster crisis response and better-informed decision-making while reducing operational costs.
+                Transform complex humanitarian data into actionable insights with GANNET&apos;s AI-powered Virtual Assistant. Available 24/7, it enables faster crisis response and better-informed decision-making while reducing operational costs.
               </motion.p>
               
               <motion.div 
@@ -370,7 +370,7 @@ export default function VirtualAssistantPage() {
                           whileHover={{ scale: 1.02 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         >
-                          <p className="text-sm text-gray-700">Hello! I'm your AI assistant. How can I help with humanitarian analysis today?</p>
+                          <p className="text-sm text-gray-700">Hello! I&apos;m your AI assistant. How can I help with humanitarian analysis today?</p>
                         </motion.div>
                       </motion.div>
                       
@@ -386,7 +386,7 @@ export default function VirtualAssistantPage() {
                           whileHover={{ scale: 1.02 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         >
-                          <p className="text-sm text-white">What's the current situation in Lebanon?</p>
+                          <p className="text-sm text-white">What&apos;s the current situation in Lebanon?</p>
                         </motion.div>
                       </motion.div>
                       
@@ -402,7 +402,7 @@ export default function VirtualAssistantPage() {
                           whileHover={{ scale: 1.02 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         >
-                          <p className="text-sm text-gray-700">I'll analyze the latest data from 875 sources...</p>
+                          <p className="text-sm text-gray-700">I&apos;ll analyze the latest data from 875 sources...</p>
                           
                           {/* Typing indicator */}
                           <motion.div 
@@ -513,7 +513,7 @@ export default function VirtualAssistantPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Join hundreds of humanitarian organizations already using GANNET's Virtual Assistant to make faster, better-informed decisions.
+            Join hundreds of humanitarian organizations already using GANNET&apos;s Virtual Assistant to make faster, better-informed decisions.
           </motion.p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
