@@ -15,6 +15,7 @@ module.exports = {
         gannetCardBg: '#1b2436',
         gannetNavBg: '#121823',
         gannetTextLight: '#e4e6eb',
+        gannetLightBg: '#f8fafc',
         gannetAccent: {
           green: '#7ad575',
           blue: '#93A0FF',

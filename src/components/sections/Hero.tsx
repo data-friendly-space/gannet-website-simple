@@ -11,7 +11,7 @@ export default function Hero() {
 
   const bgClass = isDark 
     ? 'bg-gannetDarkBg' 
-    : 'bg-blue-50';
+    : 'bg-gannetLightBg';
   
   const gradientBg = isDark
     ? 'from-gannetDarkBg via-gannetDarkBg to-gannetCardBg/80'
