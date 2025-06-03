@@ -89,7 +89,7 @@ export default function Hero() {
             
             <Link
               href="https://app.gannet.ai/sign-in"
-              className="btn-cta flex items-center justify-center w-full"
+              className="btn-cta flex items-center justify-center w-full mb-3"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -108,6 +108,13 @@ export default function Hero() {
                   d="M13 7l5 5m0 0l-5 5m5-5H6"
                 />
               </svg>
+            </Link>
+            
+            <Link
+              href="/virtual-assistant"
+              className={`btn-secondary flex items-center justify-center w-full ${isDark ? 'bg-gannetCardBg text-gannetGreen border-gannetGreen hover:bg-gannetGreen/10' : ''}`}
+            >
+              <span>Learn More</span>
             </Link>
           </div>
 
@@ -165,9 +172,16 @@ export default function Hero() {
                 Myanmar
               </Link>
             </div>
-            <p className={`text-caption ${textClass} text-center italic`}>
+            <p className={`text-caption ${textClass} text-center italic mb-6`}>
               Select a region for latest humanitarian insights
             </p>
+            
+            <Link
+              href="/situationhub"
+              className={`btn-secondary flex items-center justify-center w-full ${isDark ? 'bg-gannetCardBg text-gannetBlue border-gannetBlue hover:bg-gannetBlue/10' : ''}`}
+            >
+              <span>Learn More</span>
+            </Link>
           </div>
         </motion.div>
 
