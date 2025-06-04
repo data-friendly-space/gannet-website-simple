@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiMail, FiMessageSquare, FiHelpCircle, FiFileText } from 'react-icons/fi';
+import { FiMail, FiHelpCircle, FiFileText } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { useTheme } from '@/components/ui/ThemeContext';
 
