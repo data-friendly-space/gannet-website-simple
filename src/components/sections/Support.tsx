@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiMail, FiMessageSquare, FiHelpCircle, FiFileText } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 const supportOptions = [
@@ -15,10 +16,10 @@ const supportOptions = [
     visible: true,
   },
   {
-    name: 'Join our Slack Channel',
+    name: 'Join our WhatsApp Community',
     description: 'Connect with our community of humanitarian practitioners and developers to share insights and best practices.',
-    icon: FiMessageSquare,
-    href: 'https://join.slack.com/share/enQtODcxNDgxNTk5NDM4NS04YmExYjYxZWRkYjBmNzI3MDg1YWU0YWZmNzBmMmE1NzJlM2ZmM2E2ODllZTg5NjUyNzNlZDM4MGZhMWM2YjE1',
+    icon: FaWhatsapp,
+    href: 'https://chat.whatsapp.com/Gv4gtaiVukTAWvSMXjgePx',
     cta: 'Join Community',
     visible: true,
   },
