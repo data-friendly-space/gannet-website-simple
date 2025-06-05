@@ -58,7 +58,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 w-64">
             <Link href="/" className="flex flex-col items-start">
               <Image
                 src={isDark ? "/images/GANNET_Logo_Green.png" : "/images/GANNET_Logo_Green_Dark.png"}
@@ -88,10 +88,10 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-8">
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="flex items-center space-x-6">
               {/* Product Links */}
-              <div className="flex space-x-6 mr-6">
+              <div className="flex items-center space-x-4">
                 <Link
                   href="/virtual-assistant"
                   className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-body-small font-medium transition-colors`}
@@ -141,21 +141,26 @@ export default function Navbar() {
                 </div>
               </div>
               
+              {/* Navigation Divider */}
+              <div className={`h-6 w-px ${isDark ? 'bg-gray-600' : 'bg-gray-300'}`}></div>
+              
               {/* Regular Nav Links */}
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className={`${textClass} hover:text-gannetBlue px-3 py-2 text-body-small font-medium transition-colors`}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              <div className="flex items-center space-x-4">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={`${textClass} hover:text-gannetBlue px-3 py-2 text-body-small font-medium transition-colors`}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* CTA Button and Theme Toggle */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3 w-64 justify-end">
             <Link 
               href="https://givebutter.com/gannet" 
               className="bg-gannetBlue hover:bg-gannetBlue/90 text-white px-4 py-2.5 lg:px-5 rounded-lg text-body-small font-semibold transition-all duration-300 whitespace-nowrap"
@@ -168,7 +173,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button and Theme Toggle */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="md:hidden flex items-center space-x-3">
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -189,76 +194,83 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className={`md:hidden ${mobileBg}`}
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="px-4 pt-4 pb-6 space-y-4">
               {/* Mobile Product Links */}
-              <div className={`border-b ${mobileDivider} pb-2 mb-2`}>
-                <div className={`font-medium text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'} px-3 pb-1`}>
+              <div className={`border-b ${mobileDivider} pb-4`}>
+                <div className={`font-semibold text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'} px-2 pb-2 mb-3`}>
                   Our Products
                 </div>
                 
-                <Link
-                  href="/virtual-assistant"
-                  className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-base font-medium`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-xs">AI</span>
-                  Virtual Assistant
-                </Link>
-                
-                <div>
-                  <button
-                    onClick={() => setShowMobileHubs(!showMobileHubs)}
-                    className={`w-full flex items-center justify-between ${textClass} hover:text-gannetGreen px-3 py-2 text-base font-medium`}
+                <div className="space-y-2">
+                  <Link
+                    href="/virtual-assistant"
+                    className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-3 text-base font-medium rounded-lg hover:bg-gray-100/50 transition-all`}
+                    onClick={() => setIsOpen(false)}
                   >
-                    <div className="flex items-center">
-                      <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-xs">HUBS</span>
-                      SituationHub
-                    </div>
-                    <FiChevronDown className={`h-4 w-4 transition-transform ${showMobileHubs ? 'rotate-180' : ''}`} />
-                  </button>
+                    <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-3 text-xs font-semibold">AI</span>
+                    Virtual Assistant
+                  </Link>
                   
-                  {showMobileHubs && (
-                    <div className={`pl-10 py-1 space-y-1 ${mobileDropdownBg} rounded-lg mt-1 mb-2`}>
-                      <Link
-                        href="/situationhub"
-                        className={`block px-3 py-2 text-sm font-semibold ${textClass} hover:text-gannetGreen border-b ${isDark ? 'border-gray-700' : 'border-gray-200'} pb-2 mb-2`}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        Learn More
-                      </Link>
-                      {situationHubs.map((hub) => (
+                  <div>
+                    <button
+                      onClick={() => setShowMobileHubs(!showMobileHubs)}
+                      className={`w-full flex items-center justify-between ${textClass} hover:text-gannetGreen px-3 py-3 text-base font-medium rounded-lg hover:bg-gray-100/50 transition-all`}
+                    >
+                      <div className="flex items-center">
+                        <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-3 text-xs font-semibold">HUBS</span>
+                        SituationHub
+                      </div>
+                      <FiChevronDown className={`h-4 w-4 transition-transform ${showMobileHubs ? 'rotate-180' : ''}`} />
+                    </button>
+                    
+                    {showMobileHubs && (
+                      <div className={`ml-6 mt-2 py-2 space-y-1 ${mobileDropdownBg} rounded-lg`}>
                         <Link
-                          key={hub.name}
-                          href={hub.href}
-                          className={`block px-3 py-2 text-sm ${textClass} hover:text-gannetGreen`}
+                          href="/situationhub"
+                          className={`block px-4 py-3 text-sm font-semibold ${textClass} hover:text-gannetGreen border-b ${isDark ? 'border-gray-700' : 'border-gray-200'} mb-2`}
                           onClick={() => setIsOpen(false)}
-                          target="_blank"
-                          rel="noopener noreferrer"
                         >
-                          {hub.name}
+                          Learn More
                         </Link>
-                      ))}
-                    </div>
-                  )}
+                        {situationHubs.map((hub) => (
+                          <Link
+                            key={hub.name}
+                            href={hub.href}
+                            className={`block px-4 py-3 text-sm ${textClass} hover:text-gannetGreen rounded transition-colors`}
+                            onClick={() => setIsOpen(false)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {hub.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
               
               {/* Regular Nav Links (Mobile) */}
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className={`${textClass} hover:text-gannetGreen block px-3 py-2 text-base font-medium`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              <div className="space-y-1">
+                <div className={`font-semibold text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'} px-2 pb-2`}>
+                  Navigation
+                </div>
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={`${textClass} hover:text-gannetGreen block px-3 py-3 text-base font-medium rounded-lg hover:bg-gray-100/50 transition-all`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
               
-              <div className="mt-4 px-3 pb-3 space-y-2">
+              <div className="pt-4 px-2">
                 <Link 
                   href="https://givebutter.com/gannet" 
-                  className="w-full block bg-gannetBlue hover:bg-gannetBlue/90 text-white px-4 py-2 rounded-lg text-base font-medium text-center"
+                  className="w-full block bg-gannetBlue hover:bg-gannetBlue/90 text-white px-4 py-3 rounded-lg text-base font-semibold text-center transition-all"
                   onClick={() => setIsOpen(false)}
                   target="_blank"
                   rel="noopener noreferrer"
