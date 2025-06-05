@@ -15,6 +15,7 @@ export default function CTA() {
   const textColor = isDark ? 'text-gannetTextLight' : 'text-white';
   const subtextColor = isDark ? 'text-gray-400' : 'text-green-100';
   const buttonTextColor = isDark ? 'text-gannetDarkBg' : 'text-green-600';
+  const demoButtonTextColor = 'text-gannetDarkBg';
   
   return (
     <section className={`relative section-padding bg-gradient-to-br ${bgGradient}`}>
@@ -50,7 +51,7 @@ export default function CTA() {
             </Link>
             <Link
               href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1L0hfYi_Go8OWgzc3t1gO_JIg0wRwxIs3Uzyvuyx_dnP7VrE5SDbfbZjZCKk9PeIV1XhztDYBj"
-              className={`rounded-lg bg-gannetGreen px-8 py-4 text-center text-body font-semibold ${textColor} shadow-lg ring-1 ring-white/20 hover:bg-gannetGreen/90 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gannetGreen`}
+              className={`rounded-lg bg-gannetGreen px-8 py-4 text-center text-body font-semibold ${demoButtonTextColor} shadow-lg ring-1 ring-white/20 hover:bg-gannetGreen/90 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gannetGreen`}
               target="_blank"
               rel="noopener noreferrer"
             >

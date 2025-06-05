@@ -146,7 +146,7 @@ export default function Hero() {
             </div>
             
             {/* Region links */}
-            <div className="grid grid-cols-3 gap-3 mb-3">
+            <div className="grid grid-cols-3 gap-3 mb-6">
               <Link
                 href="https://analysis.gannet.ai/lebanon"
                 className={`${tagBg} ${tagText} ${tagHover} px-4 py-3 rounded-lg text-center text-body-small font-semibold transition-all duration-300 hover:scale-105`}
@@ -172,9 +172,6 @@ export default function Hero() {
                 Myanmar
               </Link>
             </div>
-            <p className={`text-caption ${textClass} text-center italic mb-6`}>
-              Select a region for latest humanitarian insights
-            </p>
             
             <Link
               href="/situationhub"

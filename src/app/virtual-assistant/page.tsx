@@ -78,7 +78,7 @@ export default function VirtualAssistantPage() {
   ];
 
   const dataSources = [
-    { number: "875", label: "Media Sources", description: "Comprehensive news and media coverage" },
+    { number: "695", label: "Media Sources", description: "Comprehensive news and media coverage" },
     { number: "137", label: "Government Sources", description: "Official government data and reports" },
     { number: "14", label: "UN Agencies", description: "United Nations humanitarian data" },
     { number: "29", label: "International NGOs", description: "Global humanitarian organizations" }
@@ -238,7 +238,7 @@ export default function VirtualAssistantPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Currently processing over 875 data sources across multiple categories, ensuring comprehensive and reliable humanitarian intelligence.
+            Currently processing over 695 media sources plus additional government, UN, and NGO data sources across multiple categories, ensuring comprehensive and reliable humanitarian intelligence.
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
