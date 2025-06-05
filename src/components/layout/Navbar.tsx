@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -26,6 +26,7 @@ export default function Navbar() {
   const [showHubsDropdown, setShowHubsDropdown] = useState(false);
   const [showMobileHubs, setShowMobileHubs] = useState(false);
   const { theme } = useTheme();
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   
   const isDark = theme === 'dark';
 
@@ -41,6 +42,15 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
+    };
   }, []);
 
   const navBgClass = isDark
@@ -100,11 +110,25 @@ export default function Navbar() {
                   Virtual Assistant
                 </Link>
                 
-                <div className="relative">
+                <div 
+                  className="relative"
+                  onMouseEnter={() => {
+                    // Clear any pending timeout
+                    if (dropdownTimeoutRef.current) {
+                      clearTimeout(dropdownTimeoutRef.current);
+                      dropdownTimeoutRef.current = null;
+                    }
+                    setShowHubsDropdown(true);
+                  }}
+                  onMouseLeave={() => {
+                    // Add a small delay before hiding to allow smooth mouse movement
+                    dropdownTimeoutRef.current = setTimeout(() => {
+                      setShowHubsDropdown(false);
+                    }, 150);
+                  }}
+                >
                   <button
                     className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-body-small font-medium transition-colors`}
-                    onMouseEnter={() => setShowHubsDropdown(true)}
-                    onMouseLeave={() => setShowHubsDropdown(false)}
                     onClick={() => setShowHubsDropdown(!showHubsDropdown)}
                   >
                     <span className="px-2 py-1 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-caption font-semibold">HUBS</span>
@@ -115,9 +139,7 @@ export default function Navbar() {
                   {/* Dropdown Menu */}
                   {showHubsDropdown && (
                     <div 
-                      className={`absolute left-0 mt-1 w-48 rounded-lg ${dropdownBg} py-2 shadow-lg ring-1 ring-black/10 ring-opacity-5 focus:outline-none z-50`}
-                      onMouseEnter={() => setShowHubsDropdown(true)}
-                      onMouseLeave={() => setShowHubsDropdown(false)}
+                      className={`absolute left-0 top-full w-48 rounded-lg ${dropdownBg} py-2 shadow-lg ring-1 ring-black/10 ring-opacity-5 focus:outline-none z-50`}
                     >
                       <Link
                         href="/situationhub"
