@@ -9,15 +9,22 @@ const GoogleAnalytics = (): React.ReactElement | null => {
   const pathname = usePathname();
 
   useEffect(() => {
+    console.log('GA_TRACKING_ID:', GA_TRACKING_ID);
     if (GA_TRACKING_ID) {
       const url = new URL(window.location.href);
+      console.log('Tracking pageview for:', url.href);
       pageview(url);
+    } else {
+      console.log('No GA_TRACKING_ID found');
     }
   }, [pathname]);
 
   if (!GA_TRACKING_ID) {
+    console.log('GoogleAnalytics component not rendering - no GA_TRACKING_ID');
     return null;
   }
+
+  console.log('GoogleAnalytics component rendering with ID:', GA_TRACKING_ID);
 
   return (
     <>
