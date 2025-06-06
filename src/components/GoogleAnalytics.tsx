@@ -7,32 +7,26 @@ import { pageview } from '@/lib/gtag';
 
 const GoogleAnalytics = (): React.ReactElement | null => {
   const pathname = usePathname();
-  const [gaId, setGaId] = useState<string>('');
-  const [isClient, setIsClient] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  // Get GA ID - try environment variable first, fallback to hardcoded
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-29SQJJER92';
 
   useEffect(() => {
-    // Ensure we're on the client side to avoid hydration mismatch
-    setIsClient(true);
-    // Get GA ID from environment variable at runtime, fallback to hardcoded value for testing
-    const runtimeGaId = process.env.NEXT_PUBLIC_GA_ID || 'G-29SQJJER92';
-    setGaId(runtimeGaId);
-    console.log('Runtime GA_TRACKING_ID:', runtimeGaId);
+    setMounted(true);
   }, []);
 
   useEffect(() => {
-    if (gaId && isClient) {
+    if (mounted && gaId) {
       const url = new URL(window.location.href);
-      console.log('Tracking pageview for:', url.href);
       pageview(url);
     }
-  }, [pathname, gaId, isClient]);
+  }, [pathname, mounted, gaId]);
 
-  // Don't render anything on server side to avoid hydration mismatch
-  if (!isClient || !gaId) {
+  // Only render on client to prevent hydration mismatch
+  if (!mounted || !gaId) {
     return null;
   }
-
-  console.log('GoogleAnalytics component rendering with ID:', gaId);
 
   return (
     <>
