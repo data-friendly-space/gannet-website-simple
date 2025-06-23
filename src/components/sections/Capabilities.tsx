@@ -6,26 +6,26 @@ import { useTheme } from '@/components/ui/ThemeContext';
 
 const capabilities = [
   {
-    name: 'Virtual Assistant',
-    description: 'Your AI-powered analysis staff that delivers instant, verified information when you need it most.',
+    name: 'Data Explorer',
+    description: 'Empowers users to explore, filter, and understand trusted data sources in a transparent and user-friendly way.',
     icon: FiMessageSquare,
     href: '/capabilities/virtual-assistant',
   },
   {
-    name: 'SituationHub',
-    description: 'Transform complex humanitarian data into actionable insights with our comprehensive crisis dashboard.',
+    name: 'Trusted Data',
+    description: 'Collates trusted data sources from across various ecosystems, saving users time by centralizing reliable information in one place.',
     icon: FiMap,
     href: '/capabilities/situation-hub',
   },
   {
     name: 'Media Monitoring',
-    description: 'Stay ahead with 24/7 monitoring of global news, social media, and local sources, all verified for accuracy.',
+    description: 'Stay ahead with monitoring of global and local news, media, and sources, all verified by human experts.',
     icon: FiRadio,
     href: '/capabilities/media-monitoring',
   },
   {
     name: 'Data Analysis',
-    description: 'Make data-driven decisions with automated situation analysis combining AI efficiency with human expertise.',
+    description: 'Make data-driven decisions with automated analysis combining AI efficiency with human expertise.',
     icon: FiPieChart,
     href: '/capabilities/data-analysis',
   },
@@ -37,7 +37,7 @@ const capabilities = [
   },
   {
     name: 'Secure Data',
-    description: 'Protect sensitive humanitarian data with our Private Context functionality (coming soon).',
+    description: 'Protects sensitive data through robust data privacy safeguards and responsible AI practices.',
     icon: FiLock,
     href: '/capabilities/secure-data',
   },
@@ -73,10 +73,10 @@ export default function Capabilities() {
         <div className="text-center mb-16">
           <h2 className={`section-eyebrow ${subheadingClass}`}>Capabilities</h2>
           <p className={`mt-4 heading-section ${headingClass}`}>
-            Comprehensive capabilities for humanitarian organizations
+            Comprehensive capabilities for social impact organizations
           </p>
           <p className={`mt-6 section-subtitle ${textClass}`}>
-            Our cutting-edge platform offers a range of powerful capabilities designed specifically for humanitarian contexts.
+            Our platforms provide a range of powerful capabilities designed specifically for crisis contexts.
           </p>
         </div>
 

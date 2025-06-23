@@ -38,7 +38,7 @@ export default function Footer() {
               />
             </Link>
             <p className={`mt-6 ${textClass} text-body max-w-xl`}>
-              AI for humanitarians, by humanitarians
+              AI tools for social impact
             </p>
             <div className="mt-8 flex space-x-6">
               {socialLinks.map((link) => {
@@ -62,7 +62,6 @@ export default function Footer() {
           {/* Data Friendly Space Section */}
           <div className="flex flex-col justify-center">
             <div className="text-center md:text-right">
-              <span className={`${textClass} text-body-small block mb-4`}>Created by</span>
               <a 
                 href="https://www.datafriendlyspace.org/" 
                 target="_blank" 

@@ -42,14 +42,14 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <h1 className={`heading-hero ${headingClass} mb-6`}>
-            <span className="block">Humanitarian Intelligence</span>
+            <span className="block">Human Intelligence</span>
             <span className="block gannet-gradient">
               Powered by AI
             </span>
           </h1>
           
           <p className={`section-subtitle ${textClass}`}>
-            GANNET&apos;s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes in humanitarian response.
+            GANNET&apos;s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes in crisis response.
           </p>
         </motion.div>
 
@@ -70,7 +70,7 @@ export default function Hero() {
             </div>
             
             <p className={`text-body ${textClass} mb-6`}>
-              Ask questions in any language and get clear answers supported by relevant documents.
+              Trusted information designed for quick insights and decision-making.
             </p>
             
             {/* Video preview */}
@@ -93,7 +93,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Chat with GANNET</span>
+              <span>Chat now</span>
               <svg 
                 className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" 
                 fill="none" 
@@ -128,7 +128,7 @@ export default function Hero() {
             </div>
             
             <p className={`text-body ${textClass} mb-6`}>
-              Real-time data transformed into structured situation analysis reports with human oversight.
+              Real-time data transformed into structured analysis with expert human oversight.
             </p>
             
             {/* Video preview */}

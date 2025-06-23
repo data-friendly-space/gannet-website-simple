@@ -140,7 +140,7 @@ export default function TutorialsPage() {
                   </div>
                 </div>
                 <h2 className="text-white text-2xl font-bold">Introduction to GANNET for Humanitarian Workers</h2>
-                <p className="text-gray-300 mt-2">A comprehensive overview of how GANNET can enhance humanitarian response</p>
+                <p className="text-gray-300 mt-2">A comprehensive overview of how GANNET can enhance crisis response</p>
               </div>
             </div>
             <Image 

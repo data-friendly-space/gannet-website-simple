@@ -109,7 +109,7 @@ export default function HumanitarianUseCasesPage() {
           className={`${cardBg} rounded-xl shadow-md p-6 mb-12`}
         >
           <div className="prose prose-lg max-w-none dark:prose-invert">
-            <h2>Transforming Humanitarian Response with AI</h2>
+            <h2>Transforming Crisis Response with AI</h2>
             <p>
               GANNET tools are being deployed in humanitarian contexts around the world, helping organizations
               respond more effectively to complex crises. The following case studies demonstrate how our technology

@@ -105,10 +105,10 @@ export default function Testimonials() {
         >
           <h2 className={`section-eyebrow ${subheadingClass}`}>Testimonials</h2>
           <p className={`mt-4 heading-section ${headingClass}`}>
-            From Our Humanitarian Community
+            From Our Community
           </p>
           <p className={`mt-6 section-subtitle ${subtitleClass}`}>
-            Understand how GANNET supports humanitarians worldwide enhance their impact
+            Understand how GANNET tools supports users worldwide enhance their impact
           </p>
         </motion.div>
         

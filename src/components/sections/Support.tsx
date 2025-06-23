@@ -17,7 +17,7 @@ const supportOptions = [
   },
   {
     name: 'Join our WhatsApp Community',
-    description: 'Connect with our community of humanitarian practitioners and developers to share insights and best practices.',
+    description: 'Connect with our community of practitioners to share knowledge, insights, and best practices.',
     icon: FaWhatsapp,
     href: 'https://chat.whatsapp.com/Gv4gtaiVukTAWvSMXjgePx',
     cta: 'Join Community',
@@ -57,10 +57,10 @@ export default function Support() {
         <div className="text-center mb-16">
           <h2 className={`text-base font-semibold ${subheadingClass} tracking-wide uppercase`}>Support</h2>
           <p className={`mt-2 text-3xl font-bold ${headingClass} sm:text-4xl`}>
-            We&apos;re here to help
+            Here to help
           </p>
           <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
-            Our dedicated humanitarian support team is available to assist you with any questions or issues.
+            Our dedicated support team is available to assist you with any questions or issues.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export default function Support() {
             <div className="text-center max-w-3xl mx-auto">
               <h3 className="text-2xl md:text-3xl font-bold">Get in touch</h3>
               <p className="mt-4 text-gannetDarkBg/80 text-lg">
-                Have a specific question or need personalized support? Reach out to our team directly via email.
+                Something else? Reach out directly.
               </p>
               
               <div className="mt-8">

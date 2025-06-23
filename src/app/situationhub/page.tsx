@@ -208,7 +208,7 @@ export default function SituationHubPage() {
                     ))}
                   </div>
                   <p className={`text-caption ${textClass} text-center italic`}>
-                    Select a region for latest humanitarian insights
+                    Select a region for latest analysis
                   </p>
                 </motion.div>
               </motion.div>
@@ -303,7 +303,7 @@ export default function SituationHubPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            A proven four-step process that combines AI automation with human expertise to deliver accurate, actionable humanitarian intelligence.
+            A proven four-step process that combines AI automation with human expertise to deliver accurate, actionable analysis.
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

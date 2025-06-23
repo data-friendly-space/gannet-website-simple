@@ -78,22 +78,6 @@ export default function Navbar() {
                 className="h-12 w-auto"
                 priority
               />
-              <div className="flex items-center mt-1 opacity-70 hover:opacity-100 transition-opacity">
-                <span className={`text-xs ${textClass}`}>created by</span>
-                <Link 
-                  href="https://www.datafriendlyspace.org/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/images/dfs-logo.svg"
-                    alt="Data Friendly Space Logo"
-                    width={60}
-                    height={16}
-                    className={`h-4 ml-1 ${isDark ? 'brightness-0 invert' : ''}`}
-                  />
-                </Link>
-              </div>
             </Link>
           </div>
 

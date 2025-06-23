@@ -50,7 +50,7 @@ export default function VirtualAssistantPage() {
     },
     {
       title: "Collaborative Knowledge Hub",
-      description: "Centralized humanitarian intelligence that continuously improves, fostering seamless collaboration among teams and partners.",
+      description: "Centralized analysis that continuously improves, fostering seamless collaboration among teams and partners.",
       icon: "🧠"
     },
     {
@@ -195,7 +195,7 @@ export default function VirtualAssistantPage() {
           >
             <h2 className={`heading-section ${headingClass} mb-4`}>Trusted by Humanitarians Worldwide</h2>
             <p className={`text-body ${textClass}`}>
-              Empowering the frontlines of humanitarian response: 80% of our users come from local organizations that previously lacked access to advanced analytical tools.
+              Empowering the frontlines of crisis response: 80% of our users come from local organizations that previously lacked access to advanced analytical tools.
             </p>
           </motion.div>
           
@@ -238,7 +238,7 @@ export default function VirtualAssistantPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Currently processing over 695 media sources plus additional government, UN, and NGO data sources across multiple categories, ensuring comprehensive and reliable humanitarian intelligence.
+            Currently processing over 695 media sources plus additional government, UN, and NGO data sources across multiple categories, ensuring comprehensive and reliable analysis.
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
