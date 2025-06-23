@@ -14,7 +14,6 @@ export default function CTA() {
     
   const textColor = isDark ? 'text-gannetTextLight' : 'text-white';
   const subtextColor = isDark ? 'text-gray-400' : 'text-green-100';
-  const buttonTextColor = isDark ? 'text-gannetDarkBg' : 'text-green-600';
   const demoButtonTextColor = 'text-gannetDarkBg';
   
   return (
