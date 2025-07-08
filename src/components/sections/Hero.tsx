@@ -191,7 +191,7 @@ export default function Hero() {
             </div>
             
             <p className={`text-body ${textClass} mb-6`}>
-              Transform your organization's knowledge into instant, intelligent insights. Upload documents or connect to SharePoint for AI-powered knowledge management with complete data sovereignty.
+              Transform your organization&apos;s knowledge into instant, intelligent insights. Upload documents or connect to SharePoint for AI-powered knowledge management with complete data sovereignty.
             </p>
             
             {/* Features preview */}

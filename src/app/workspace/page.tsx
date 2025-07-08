@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiDatabase, FiShield, FiSearch, FiShare2, FiDownload, FiSettings, FiLock, FiGlobe, FiArrowRight, FiCheckCircle, FiClock, FiZap } from 'react-icons/fi';
+import { FiDatabase, FiShield, FiSearch, FiShare2, FiLock, FiGlobe, FiArrowRight, FiCheckCircle, FiClock, FiZap } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 export default function WorkspacePage() {
@@ -123,7 +123,7 @@ export default function WorkspacePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.15 }}
               >
-                Transform your organization's knowledge into instant, intelligent insights. Upload documents or connect to SharePoint for AI-powered knowledge management with complete data sovereignty.
+                Transform your organization&apos;s knowledge into instant, intelligent insights. Upload documents or connect to SharePoint for AI-powered knowledge management with complete data sovereignty.
               </motion.p>
               
               <motion.div 
@@ -318,7 +318,7 @@ export default function WorkspacePage() {
               Implementation Options
             </h2>
             <p className={`text-body-large ${textClass} max-w-3xl mx-auto`}>
-              Choose the deployment approach that best fits your organization's needs and timeline
+              Choose the deployment approach that best fits your organization&apos;s needs and timeline
             </p>
           </motion.div>
           
