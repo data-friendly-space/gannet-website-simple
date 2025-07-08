@@ -71,7 +71,7 @@ export default function VirtualAssistantPage() {
   ];
 
   const stats = [
-    { number: "600+", label: "Active Users" },
+    { number: "1,000+", label: "Active Users" },
     { number: "190+", label: "Organizations" },
     { number: "72", label: "Countries" },
     { number: "875", label: "Data Sources" }
@@ -513,7 +513,7 @@ export default function VirtualAssistantPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Join hundreds of humanitarian organizations already using GANNET&apos;s Virtual Assistant to make faster, better-informed decisions.
+            Join hundreds of social impact organizations already using GANNET&apos;s Virtual Assistant to make faster, better-informed decisions.
           </motion.p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">

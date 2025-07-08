@@ -73,7 +73,7 @@ export default function ResourcesPage() {
               GANNET Resources
             </h1>
             <p className={`mt-5 max-w-2xl mx-auto text-xl ${textClass}`}>
-              A comprehensive library of guides, tutorials, and tools to help humanitarian organizations maximize their impact.
+              A comprehensive library of guides, tutorials, and tools to help social impact organizations maximize their impact.
             </p>
           </motion.div>
         </div>

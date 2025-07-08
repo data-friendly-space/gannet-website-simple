@@ -90,7 +90,7 @@ export default function Navbar() {
                   href="/virtual-assistant"
                   className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-body-small font-medium transition-colors`}
                 >
-                  <span className="px-2 py-1 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-caption font-semibold">AI</span>
+                  <span className="px-2 py-1 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-caption font-semibold">VA</span>
                   Virtual Assistant
                 </Link>
                 
@@ -112,10 +112,10 @@ export default function Navbar() {
                   }}
                 >
                   <button
-                    className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-body-small font-medium transition-colors`}
+                    className={`flex items-center ${textClass} hover:text-gannetBlue px-3 py-2 text-body-small font-medium transition-colors`}
                     onClick={() => setShowHubsDropdown(!showHubsDropdown)}
                   >
-                    <span className="px-2 py-1 bg-gannetGreen/20 text-gannetGreen rounded mr-2 text-caption font-semibold">HUBS</span>
+                    <span className="px-2 py-1 bg-gannetBlue/20 text-gannetBlue rounded mr-2 text-caption font-semibold">HUBS</span>
                     SituationHub
                     <FiChevronDown className="ml-1 h-4 w-4" />
                   </button>
@@ -145,6 +145,14 @@ export default function Navbar() {
                     </div>
                   )}
                 </div>
+                
+                <Link
+                  href="/workspace"
+                  className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-2 text-body-small font-medium transition-colors`}
+                >
+                  <span className="px-2 py-1 bg-purple-500/20 text-purple-500 rounded mr-2 text-caption font-semibold">WORKSPACE</span>
+                  Workspace
+                </Link>
               </div>
               
               {/* Navigation Divider */}
@@ -213,17 +221,17 @@ export default function Navbar() {
                     className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-3 text-base font-medium rounded-lg hover:bg-gray-100/50 transition-all`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-3 text-xs font-semibold">AI</span>
+                    <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-3 text-xs font-semibold">VA</span>
                     Virtual Assistant
                   </Link>
                   
                   <div>
                     <button
                       onClick={() => setShowMobileHubs(!showMobileHubs)}
-                      className={`w-full flex items-center justify-between ${textClass} hover:text-gannetGreen px-3 py-3 text-base font-medium rounded-lg hover:bg-gray-100/50 transition-all`}
+                      className={`w-full flex items-center justify-between ${textClass} hover:text-gannetBlue px-3 py-3 text-base font-medium rounded-lg hover:bg-gray-100/50 transition-all`}
                     >
                       <div className="flex items-center">
-                        <span className="px-2 py-0.5 bg-gannetGreen/20 text-gannetGreen rounded mr-3 text-xs font-semibold">HUBS</span>
+                        <span className="px-2 py-0.5 bg-gannetBlue/20 text-gannetBlue rounded mr-3 text-xs font-semibold">HUBS</span>
                         SituationHub
                       </div>
                       <FiChevronDown className={`h-4 w-4 transition-transform ${showMobileHubs ? 'rotate-180' : ''}`} />
@@ -233,7 +241,7 @@ export default function Navbar() {
                       <div className={`ml-6 mt-2 py-2 space-y-1 ${mobileDropdownBg} rounded-lg`}>
                         <Link
                           href="/situationhub"
-                          className={`block px-4 py-3 text-sm font-semibold ${textClass} hover:text-gannetGreen border-b ${isDark ? 'border-gray-700' : 'border-gray-200'} mb-2`}
+                          className={`block px-4 py-3 text-sm font-semibold ${textClass} hover:text-gannetBlue border-b ${isDark ? 'border-gray-700' : 'border-gray-200'} mb-2`}
                           onClick={() => setIsOpen(false)}
                         >
                           Learn More
@@ -242,7 +250,7 @@ export default function Navbar() {
                           <Link
                             key={hub.name}
                             href={hub.href}
-                            className={`block px-4 py-3 text-sm ${textClass} hover:text-gannetGreen rounded transition-colors`}
+                            className={`block px-4 py-3 text-sm ${textClass} hover:text-gannetBlue rounded transition-colors`}
                             onClick={() => setIsOpen(false)}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -253,6 +261,15 @@ export default function Navbar() {
                       </div>
                     )}
                   </div>
+                  
+                  <Link
+                    href="/workspace"
+                    className={`flex items-center ${textClass} hover:text-gannetGreen px-3 py-3 text-base font-medium rounded-lg hover:bg-gray-100/50 transition-all`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="px-2 py-0.5 bg-purple-500/20 text-purple-500 rounded mr-3 text-xs font-semibold">WORKSPACE</span>
+                    Workspace
+                  </Link>
                 </div>
               </div>
               

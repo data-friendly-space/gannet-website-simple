@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { FiMessageSquare, FiMap, FiRadio, FiPieChart, FiGlobe, FiLock } from 'react-icons/fi';
+import { FiMessageSquare, FiMap, FiRadio, FiPieChart, FiGlobe, FiLock, FiFileText, FiLayers, FiUsers } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 const capabilities = [
@@ -41,6 +41,24 @@ const capabilities = [
     icon: FiLock,
     href: '/capabilities/secure-data',
   },
+  {
+    name: 'Document Intelligence',
+    description: 'Process and understand organizational documents with AI to extract insights and enable intelligent search across your knowledge base.',
+    icon: FiFileText,
+    href: '/capabilities/document-intelligence',
+  },
+  {
+    name: 'Knowledge Synthesis',
+    description: 'Combine insights from multiple sources and formats to create comprehensive understanding and actionable intelligence.',
+    icon: FiLayers,
+    href: '/capabilities/knowledge-synthesis',
+  },
+  {
+    name: 'Secure Collaboration',
+    description: 'Share knowledge safely within your organization with enterprise-grade security and granular access controls.',
+    icon: FiUsers,
+    href: '/capabilities/secure-collaboration',
+  },
 ];
 
 const fadeInUp = {
@@ -76,7 +94,7 @@ export default function Capabilities() {
             Comprehensive capabilities for social impact organizations
           </p>
           <p className={`mt-6 section-subtitle ${textClass}`}>
-            Our platforms provide a range of powerful capabilities designed specifically for crisis contexts.
+            Our platforms provide a range of powerful capabilities designed specifically for social impact contexts and knowledge management.
           </p>
         </div>
 

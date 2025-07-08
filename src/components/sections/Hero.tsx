@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiMessageSquare, FiMap, FiCalendar } from 'react-icons/fi';
+import { FiMessageSquare, FiMap, FiCalendar, FiDatabase } from 'react-icons/fi';
 import { useTheme } from '@/components/ui/ThemeContext';
 
 export default function Hero() {
@@ -49,13 +49,13 @@ export default function Hero() {
           </h1>
           
           <p className={`section-subtitle ${textClass}`}>
-            GANNET&apos;s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes in crisis response.
+            GANNET&apos;s initiative offers AI-powered tools that deliver accessible, real-time information to enhance efficiency and drive meaningful outcomes for social impact organizations.
           </p>
         </motion.div>
 
         {/* Visual products showcase */}
         <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -176,6 +176,49 @@ export default function Hero() {
             <Link
               href="/situationhub"
               className={`btn-secondary flex items-center justify-center w-full ${isDark ? 'bg-gannetCardBg text-gannetBlue border-gannetBlue hover:bg-gannetBlue/10' : ''}`}
+            >
+              <span>Learn More</span>
+            </Link>
+          </div>
+
+          {/* GANNET Workspace */}
+          <div className={`${cardBg} rounded-xl shadow-lg card-padding border-2 border-transparent hover:border-purple-500 transition-all duration-300 hover:shadow-xl`}>
+            <div className="flex items-center mb-4">
+              <div className="p-3 bg-purple-500 rounded-lg">
+                <FiDatabase className="h-6 w-6 text-white" />
+              </div>
+              <h2 className={`ml-4 heading-card ${headingClass}`}>Workspace</h2>
+            </div>
+            
+            <p className={`text-body ${textClass} mb-6`}>
+              Transform your organization's knowledge into instant, intelligent insights. Upload documents or connect to SharePoint for AI-powered knowledge management with complete data sovereignty.
+            </p>
+            
+            {/* Features preview */}
+            <div className="mb-6 space-y-3">
+              <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>Private AI architecture</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>SharePoint integration</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>Enterprise-grade security</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                <span>Natural language search</span>
+              </div>
+            </div>
+            
+
+            
+            <Link
+              href="/workspace"
+              className={`btn-secondary flex items-center justify-center w-full ${isDark ? 'bg-gannetCardBg text-purple-500 border-purple-500 hover:bg-purple-500/10' : ''}`}
             >
               <span>Learn More</span>
             </Link>

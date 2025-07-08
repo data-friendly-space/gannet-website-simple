@@ -347,8 +347,8 @@ export default function SituationHubPage() {
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section className="section-padding">
+      {/* Case Studies Section - HIDDEN */}
+      {/* <section className="section-padding">
         <div className="max-w-7xl mx-auto container-padding">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -393,7 +393,7 @@ export default function SituationHubPage() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className={`section-padding ${isDark ? 'bg-gannetDarkBg' : 'bg-gray-900'}`}>
@@ -445,7 +445,7 @@ export default function SituationHubPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Join humanitarian organizations worldwide using SituationHub for real-time crisis analysis and faster response coordination.
+            Join social impact organizations worldwide using SituationHub for real-time crisis analysis and faster response coordination.
           </motion.p>
           
           <motion.div 

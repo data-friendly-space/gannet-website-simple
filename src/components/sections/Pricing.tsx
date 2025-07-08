@@ -24,7 +24,7 @@ const pricingTiers: PricingTier[] = [
     name: 'Basic',
     id: 'tier-starter',
     price: { monthly: '$29', annually: '$24' },
-    description: 'Perfect for small NGOs and local humanitarian teams.',
+    description: 'Perfect for small NGOs and local social impact teams.',
     features: [
       'Up to 5 team members',
       'SituationHub access (limited countries)',
@@ -41,7 +41,7 @@ const pricingTiers: PricingTier[] = [
     name: 'Professional',
     id: 'tier-professional',
     price: { monthly: '$79', annually: '$69' },
-    description: 'Ideal for mid-sized humanitarian organizations.',
+    description: 'Ideal for mid-sized social impact organizations.',
     features: [
       'Up to 50 team members',
       'Full SituationHub access',
@@ -200,7 +200,7 @@ export default function Pricing() {
         <div className={`mt-16 text-center ${sponsoredBgClass} rounded-xl card-padding`}>
           <h3 className={`text-xl font-medium ${headingClass}`}>Need a sponsored solution?</h3>
           <p className={`mt-2 ${textClass}`}>
-            We offer sponsorship options for humanitarian organizations operating in resource-constrained environments.
+            We offer sponsorship options for social impact organizations operating in resource-constrained environments.
           </p>
           <Link
             href="/contact-sales"
