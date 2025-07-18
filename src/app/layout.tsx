@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ui/ThemeContext";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,6 +65,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
         <GoogleAnalytics />
+        <MicrosoftClarity />
         <ThemeProvider>
           <Navbar />
           <main>{children}</main>
