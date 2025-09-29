@@ -217,6 +217,74 @@ export default function SituationHubPage() {
         </div>
       </section>
 
+      {/* Sponsors Section */}
+      <section className={`section-padding ${isDark ? 'bg-gannetDarkBg' : 'bg-white'}`}>
+        <div className="max-w-7xl mx-auto container-padding">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className={`heading-section ${headingClass} mb-4`}>
+              Supported By
+            </h2>
+            <p className={`text-body ${textClass} max-w-2xl mx-auto`}>
+              SituationHub is proudly sponsored by leading humanitarian organizations committed to enhancing crisis response capabilities.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-8 md:gap-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            {/* H2H Network Logo */}
+            <div className="flex items-center justify-center">
+              <img
+                src="/images/H2HNetwork_logo_full_lockup_BLACK_RGB-1.png"
+                alt="H2H Network"
+                className={`h-16 md:h-20 object-contain ${isDark ? 'brightness-0 invert' : ''} transition-all duration-300 hover:scale-105`}
+              />
+            </div>
+
+            {/* Save the Children Logo */}
+            <div className="flex items-center justify-center">
+              <img
+                src="/images/Save_the_Children_color_logo.png"
+                alt="Save the Children"
+                className={`h-16 md:h-20 object-contain ${isDark ? 'brightness-0 invert' : ''} transition-all duration-300 hover:scale-105`}
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Created By Section */}
+      <section className={`py-8 ${isDark ? 'bg-gannetCardBg' : 'bg-gray-50'}`}>
+        <div className="max-w-4xl mx-auto container-padding">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className={`heading-section ${headingClass} mb-8`}>
+              Created By
+            </h2>
+
+            <div className="flex items-center justify-center">
+              <img
+                src="/images/dfs.png"
+                alt="Data Friendly Space"
+                className={`h-16 md:h-20 object-contain ${isDark ? 'brightness-0 invert' : ''} transition-all duration-300 hover:scale-105`}
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Core Benefits Section */}
       <section className={`section-padding ${isDark ? 'bg-gannetCardBg' : 'bg-gray-50'}`}>
         <div className="max-w-7xl mx-auto container-padding">
